@@ -1,0 +1,152 @@
+App.js
+
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500   24)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500   27)               Squat: 4 x 4  |   87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500   46)               Bench Press: 3 x 4   |  85% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500   82)               Deadlift (If going for Strength): 4 x 4   |   82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  100)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  103)               Squat: 4 x 4   |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  122)               Bench Press: 3 x 6  |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  176)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  177)             Day 1
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  179)               Squat: 4 x 4    |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  234)               Deadlift (If going for Strength): 4 x 6   |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  255)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  258)               Squat: 4 x 4  |  87.5% of ORM 
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  275)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  280)               Bench Press: 3 x 6  |  80% of ORM
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  299)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  322)               Deadlift (If going for Strength): 4 x 4   |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  340)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  343)               Squat: 4 x 4   |  87.5% of ORM
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  360)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  365)               Bench Press: 3 x 6  |  82.5% of ORM
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  384)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>  
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  402)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  407)               Deadlift (If going for Strength): 4 x 6  |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  425)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  428)               Squat: 4 x 4   |  87.5% of ORM
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  445)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  450)               Bench Press: 3 x 6   |  82.5% of ORM
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  469)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  487)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  492)               Deadlift (If going for Strength): 4 x 6 (optional)    |  80% of ORM
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  509)           else return <p> error: {this.state.fields.DesiredBody} is not an acceptable i>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  516)               Squat: 4 x 4  |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  535)               Bench Press: 3 x 4    |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  571)               Deadlift (If going for Strength): 4 x 4   |  85% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  589)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  592)               Squat: 4 x 4   |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  611)               Bench Press: 3 x 6   |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  647)               Deadlift (If going for Strength): 4 x 6   |  77.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  665)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  668)               Squat: 4 x 4   |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  687)               Bench Press: 3 x 6   |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  723)               Deadlift (If going for Strength): 4 x 6   |  77.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  747)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  750)               Squat: 4 x 4  |   87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  769)               Bench Press: 3 x 4   |  85% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  805)               Deadlift (If going for Strength): 4 x 4   |   82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  821)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  840)             return <p> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  843)               Squat: 4 x 4   |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  862)               Bench Press: 3 x 6  |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  898)               Deadlift (If going for Strength): 4 x 6   |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  912)               <br/>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  914)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  933)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  935)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  936)               Squat: 4 x 4    |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  955)               Bench Press: 3 x 6  |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500  991)               Deadlift (If going for Strength): 4 x 6   |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1005)               <br/>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1007)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1029)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1031)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1032)               Squat: 4 x 4  |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1054)               Bench Press: 3 x 6  |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1096)               Deadlift (If going for Strength): 4 x 4   |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1112)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1136)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1138)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1139)               Squat: 4 x 4   |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1161)               Bench Press: 3 x 6  |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1203)               Deadlift (If going for Strength): 4 x 6  |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1243)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1245)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1246)               Squat: 4 x 4   |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1268)               Bench Press: 3 x 6   |  82.5% of ORM 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1310)               Deadlift (If going for Strength): 4 x 6 (optional)    |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1353)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1356)               Squat: 4 x 4  |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1374)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1375)               Bench Press: 3 x 4    |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1411)               Deadlift (If going for Strength): 4 x 4   |  85% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1446)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1448)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1449)               Squat: 4 x 4   |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1467)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1468)               Bench Press: 3 x 6   |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1504)               Deadlift (If going for Strength): 4 x 6   |  77.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1518)               <br/>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1541)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1543)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1544)               Squat: 4 x 4   |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1563)               Bench Press: 3 x 6   |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1599)               Deadlift (If going for Strength): 4 x 6   |  77.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1642)               return <p> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1645)               Squat: 4 x 4  |   87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1664)               Bench Press: 3 x 4   |  85% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1682)               <br/>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1684)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1685)               Deadlift (If going for Strength): 4 x 4   |   82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1699)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1703)               return <p> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1706)               Squat: 4 x 4   |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1725)               Bench Press: 3 x 6  |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1746)               Deadlift (If going for Strength): 4 x 6   |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1764)               return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1767)               Squat: 4 x 4    |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1786)               Bench Press: 3 x 6  |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1807)               Deadlift (If going for Strength): 4 x 6   |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1828)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1831)               Squat: 4 x 4  |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1853)               Bench Press: 3 x 6  |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1877)               Deadlift (If going for Strength): 4 x 4   |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1898)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1901)               Squat: 4 x 4   |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1923)               Bench Press: 3 x 6  |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1947)               Deadlift (If going for Strength): 4 x 6  |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1966)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1967)              Day 1
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1969)               Squat: 4 x 4   |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 1991)               Bench Press: 3 x 6   |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2015)               Deadlift (If going for Strength): 4 x 6 (optional)    |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2037)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2040)               Squat: 4 x 4  |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2042)               Leg Extension: 4 x 12
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2044)               Front Squat: 3 x 8
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2046)               Leg Curl: 4 x 10
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2048)               Calf Raise: 4 x 12
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2050)               Some Form of Curl: 2 x 15
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2052)               Bicep Curls (Form can vary): 2 x 8
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2053)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2054)               Hanging Leg raise: 3 x 12
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2062)               Bench Press: 3 x 4    |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2074)               Arnold Press: 4 x 8
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2080)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2086)               Deadlift (If going for Strength): 4 x 4   |  85% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2100)               <br/>   
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2107)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2110)               Squat: 4 x 4   |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2132)               Bench Press: 3 x 6   |  80% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2155)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2156)               Deadlift (If going for Strength): 4 x 6   |  77.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2175)             return <p>
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2178)               Squat: 4 x 4   |  87.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2199)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2200)               Bench Press: 3 x 6   |  82.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2223)               <br/> 
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2224)               Deadlift (If going for Strength): 4 x 6   |  77.5% of ORM
+a663b18c (John Blackaby 2022-11-30 12:35:19 -0500 2238)               <br/> 
+

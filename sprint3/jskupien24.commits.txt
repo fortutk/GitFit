@@ -1,0 +1,632 @@
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\tabs\LSF\forgotP.js 
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400  1) import * as React from 'react';
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400  2) import Box from '@mui/material/Box';    
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400  3) import TextField from '@mui/material/TextField';
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400  4) import Button from '@mui/material/Button';
+77ecce10 Jack/src/components/pages/LSF/forgotP.js (Jack Skupien      2022-11-07 19:38:39 -0800  5) import './LSF.css'
+b995fa00 Jack/src/components/pages/LSF/forgotP.js (Jack Skupien      2022-11-09 06:32:36 -0800  6) import {Link} from 'react-router-dom';  
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400  7)
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400  8) export default class forgotP extends React.Component {
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400  9)     state = {
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400 10)         email: ""
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400 11)     }
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400 12)
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400 13)     change = (e) => {
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400 14)         this.setState({
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400 15)             [e.target.name]: e.target.value
+49097ada Jack/src/components/pages/LSF/forgotP.js (Jack              2022-10-27 20:48:21 -0400 16)         });
+
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\tabs\LSF\index.js  
+49097ada Jack/src/components/pages/LSF/index.js (Jack 2022-10-27 20:48:21 -0400  1) import React from 'react'
+49097ada Jack/src/components/pages/LSF/index.js (Jack 2022-10-27 20:48:21 -0400  2) import ReactDOM from 'react-dom'       
+49097ada Jack/src/components/pages/LSF/index.js (Jack 2022-10-27 20:48:21 -0400  3) import App from './App'
+49097ada Jack/src/components/pages/LSF/index.js (Jack 2022-10-27 20:48:21 -0400  4) import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+49097ada Jack/src/components/pages/LSF/index.js (Jack 2022-10-27 20:48:21 -0400  5) //import {Signup, LogIn, Forgotp} from 
+'./App';
+49097ada Jack/src/components/pages/LSF/index.js (Jack 2022-10-27 20:48:21 -0400  6) import Signup from "./signUp"
+49097ada Jack/src/components/pages/LSF/index.js (Jack 2022-10-27 20:48:21 -0400  7) import Login from "./login"
+49097ada Jack/src/components/pages/LSF/index.js (Jack 2022-10-27 20:48:21 -0400  8) import ForgotP from "./forgotP"        
+49097ada Jack/src/components/pages/LSF/index.js (Jack 2022-10-27 20:48:21 -0400  9) 
+49097ada Jack/src/components/pages/LSF/index.js (Jack 2022-10-27 20:48:21 -0400 10) 
+49097ada Jack/src/components/pages/LSF/index.js (Jack 2022-10-27 20:48:21 -0400 11)  ReactDOM.render( <App/>,document.getElementById('root'))
+49097ada Jack/src/components/pages/LSF/index.js (Jack 2022-10-27 20:48:21 -0400 12) 
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\tabs\LSF\login.js
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400  1) import * as React from 'react';49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400  2) import Box from '@mui/material/Box';
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400  3) import TextField from '@mui/material/TextField';
+c963f0a3 Jack/src/components/pages/LSF/login.js (Jack Skupien 2022-11-08 16:13:13 -0800  4) import Button from '@mui/material/Button';
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400  5) import {Link} from 'react-router-dom';
+c963f0a3 Jack/src/components/pages/LSF/login.js (Jack Skupien 2022-11-08 16:13:13 -0800  6) // import { Button } from '../../Button';
+c963f0a3 Jack/src/components/pages/LSF/login.js (Jack Skupien 2022-11-08 16:13:13 -0800  7) import '../../../App.css';     
+1c74d657 Jack/src/components/pages/LSF/login.js (Jack Skupien 2022-11-07 13:53:28 -0800  8) import './LSF.css';
+c963f0a3 Jack/src/components/pages/LSF/login.js (Jack Skupien 2022-11-08 16:13:13 -0800  9) // import '../../Cards.css'    
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 10) 
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 11) export default class Login extends React.Component {
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 12)     state = {
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 13)         email: "",
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 14)         password: ""
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 15)     }
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 16)
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 17)     change = (e) => {
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 18)         this.setState({        
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 19)             [e.target.name]: e.target.value
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 20)         });
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 21)     };
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 22)
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 23)
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 24)     onSubmit = e => {
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 25)         e.preventDefault();    
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 26)         this.props.onSubmit(this.state)
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 27)         this.setState({        
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 28)             email: "",
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 29)             password: ""       
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 30)         })
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 31)     };
+49097ada Jack/src/components/pages/LSF/login.js (Jack         2022-10-27 20:48:21 -0400 32)
+
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\tabs\LSF\LS.js   
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400  1) import React, { Component } from 'react';
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400  2) import SignUp from './signUp';
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400  3) import Login from './login'
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400  4) import ForgotP from './forgotP'
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400  5) import ReactDOM from 'react-dom';
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400  6) import {
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400  7)     BrowserRouter as Router,
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400  8)     Routes,
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400  9)     Route,
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 10)     Redirect,
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 11)     Link
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 12)   } from "react-router-dom";
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 13)
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 14)   function LogIn(){
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 15)     return(
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 16)       <Login />
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 17)     )
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 18)   }
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 19)
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 20)   function Signup(){
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 21)     return(
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 22)       <SignUp/>
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 23)     )
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 24)   }
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 25)
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 26)   function Forgotp(){
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 27)     return(
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 28)       <ForgotP/>
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 29)     )
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 30)   }
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 31)
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 32) export default function App() {
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 33)   return(
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 34)     <Router>
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 35)        <div>
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 36)       <Routes>
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 37)
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 38)         <Route path = "/login" element={<LogIn />} />
+49097ada Jack/src/components/pages/LSF/LS.js (Jack 2022-10-27 20:48:21 -0400 39)         <Route path = "/signup" element={<
+
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\tabs\LSF\LSF.css
+leapis.com/css2?family=Orbitron:wght@500&display=swap');
+1c74d657 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-07 13:53:28 -0800   2) 
+1c74d657 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-07 13:53:28 -0800   3) image{
+1c74d657 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-07 13:53:28 -0800   4)     object-fit: cover;
+1c74d657 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-07 13:53:28 -0800   5)     width: 100%;
+1c74d657 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-07 13:53:28 -0800   6)     height: 100%;
+b995fa00 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-09 06:32:36 -0800   7)     position: absolute;        
+1c74d657 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-07 13:53:28 -0800   8)     z-index: -1;
+0733b0eb Jack/src/components/tabs/LSF/LSF.css  (Jack Skupien 2022-11-09 09:02:12 -0800   9)     /* scale: 10%; */
+b995fa00 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-09 06:32:36 -0800  10)     scale: fixed;
+77ecce10 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-07 19:38:39 -0800  11) }
+77ecce10 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-07 19:38:39 -0800  12) 
+c963f0a3 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-08 16:13:13 -0800  13) .lsf{
+c963f0a3 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-08 16:13:13 -0800  14)     background-image: url('/images/PUSHUP.jpg');
+b995fa00 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-09 06:32:36 -0800  15)     height: 100%;
+b995fa00 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-09 06:32:36 -0800  16)     width: 100%;
+b995fa00 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-09 06:32:36 -0800  17)     position:fixed;
+c963f0a3 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-08 16:13:13 -0800  18)     display:flex;
+c963f0a3 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-08 16:13:13 -0800  19)     justify-content:center;    
+b995fa00 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-09 06:32:36 -0800  20)     display: fixed;
+c963f0a3 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-08 16:13:13 -0800  21)     background-size:cover;     
+0733b0eb Jack/src/components/tabs/LSF/LSF.css  (Jack Skupien 2022-11-09 09:02:12 -0800  22)     scale: 100%;
+c963f0a3 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-08 16:13:13 -0800  23) }
+c963f0a3 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-08 16:13:13 -0800  24) 
+c963f0a3 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-08 16:13:13 -0800  25) .lsf-container{
+c963f0a3 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-08 16:13:13 -0800  26)     margin-top: 100px;
+0733b0eb Jack/src/components/tabs/LSF/LSF.css  (Jack Skupien 2022-11-09 09:02:12 -0800  27)     height: 400px;
+0733b0eb Jack/src/components/tabs/LSF/LSF.css  (Jack Skupien 2022-11-09 09:02:12 -0800  28)     width: 400px;
+c963f0a3 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-08 16:13:13 -0800  29)     background:rgba(35,37,46,0.87);
+c963f0a3 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-08 16:13:13 -0800  30)     /* background: #23252E; */ 
+c963f0a3 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-08 16:13:13 -0800  31)     /* opacity:0.5; */
+77ecce10 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-07 19:38:39 -0800  32)     /* font */
+0733b0eb Jack/src/components/tabs/LSF/LSF.css  (Jack Skupien 2022-11-09 09:02:12 -0800  33)     size:fixed;
+c963f0a3 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-08 16:13:13 -0800  34)     display: flex;
+77ecce10 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-07 19:38:39 -0800  35)     flex-direction: column;    
+77ecce10 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-07 19:38:39 -0800  36)     justify-content: center;   
+77ecce10 Jack/src/components/pages/LSF/LSF.css (Jack Skupien 2022-11-07 19:38:39 -0800  37)     font-family: 'Orbitron', saPS C:\Users\slimt\GitFit> git blame Jack\src\components\tabs\LSF\signUp.js
+';
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400   2) import Box from '@mui/material/Box';
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400   3) import TextField from '@mui/material/TextField';
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400   4) import Button from '@mui/material/Button';
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400   5) import {Link} from 'react-router-dom'
+77ecce10 Jack/src/components/pages/LSF/signUp.js (Jack Skupien 2022-11-07 19:38:39 -0800   6) import './LSF.css'
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400   7) // import login from './login'
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400   8) // import { initializeApp } from "firebase/app";
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400   9) // import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  10) //import { getAnalytics } from "firebase/analytics";
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  11)
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  12) //Firebase info
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  13) // const firebaseConfig = {  
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  14) //   apiKey: "AIzaSyBpXW4PRvBgm_OdHZrNBan8hYvISW3qdOs",
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  15) //   authDomain: "gitfit-16360.firebaseapp.com",
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  16) //   projectId: "gitfit-16360",
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  17) //   storageBucket: "gitfit-16360.appspot.com",
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  18) //   messagingSenderId: "850707313995",
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  19) //   appId: "1:850707313995:web:2c4eea72090c04a700a4ce",
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  20) //   measurementId: "G-GL9EESM2YB"
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  21) // };
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  22)
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  23) // Initialize Firebase       
+49097ada Jack/src/components/pages/LSF/signUp.js (Jack         2022-10-27 20:48:21 -0400  24) // const app = initializeApp(PS C:\Users\slimt\GitFit> git blame Jack\src\components\tabs\TOOLS\bmi.js 
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  2) import Box from '@mui/material/Box';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  3) import TextField from '@mui/material/TextField';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  4) import './TOOLS.css'
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  5)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  6)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  7) export default class BMI extends React.Component {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  8)    state = {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  9) weight: "",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 10)            height: ""
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 11)    }
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 12)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 13)    change = (e) => {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 14)            this.setState({
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 15)                            [e.target.name]: e.target.value
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 16)                            });
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 17)    };
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 18)    // resets state
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 19)    onSubmit = e => {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 20)            e.preventDefault();
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 21)            this.props.onSubmit(this.state)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 22)                    this.setState({
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 23) weight: "",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 24) height: ""
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 25) })
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 26) };
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 27)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 28) render(){
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 29)    return(
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 30)            <tools className='tools'>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 31)                    <div className='tools-container'>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 32)                            <h1>BMI Calculator</h1>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 33)                            <h2>Let's figure Out Your Body</h2><h2>Mass Index!</h2>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 34)                            {/* <br/> */}
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 35)                            <Box
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 36)                                    component="form"
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 37)                                    sx={{'& > :not(style)': { m: 2, width: '25ch' },}}
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 38)                                    noValidate
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\tabs\TOOLS\calorie.js
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800   2) import Box from '@mui/material/Box';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800   3) import TextField from '@mui/material/TextField';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800   4) import './TOOLS.css'
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800   5)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800   6) export default class Calorie extends React.Component {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800   7)     state = {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800   8)         weight: "",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800   9)         height: "",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  10)         age: "",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  11)     }
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  12)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  13)     change = (e) => {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  14)         this.setState({
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  15)             [e.target.name]: e.target.value
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  16)         });
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  17)     };
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  18)     // resets state
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  19)     onSubmit = e => {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  20)         e.preventDefault();
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  21)         this.props.onSubmit(this.state)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  22)         this.setState({
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  23)             weight: "",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  24)             height: "",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  25)             age: "",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  26)         })
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  27)     };
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  28)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  29) render(){
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  30)     return(
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  31)         <tools className="tools">
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  32)             <div className="tools-container-two">
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  33)                 <h1>Calorie Calculator</h1>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  34)                 <h2>Let's Figure Out How Many</h2><h2>Calories You Need!</h2>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  35)                 <Box
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  36)                     component="form"
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  37)                     sx={{'& > :not(style)': { m: 2, width: '25ch' },}}
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  38)                     noValidate
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\tabs\TOOLS\heart_rate.js
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  2) import Box from '@mui/material/Box';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  3) import TextField from '@mui/material/TextField';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  4)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  5) export default class Rate extends React.Component {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  6)    state = {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  7)         age: ""
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  8)    }
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  9)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 10)    change = (e) => {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 11)            this.setState({
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 12)                            [e.target.name]: e.target.value
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 13)                            });
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 15)    // resets state
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 16)    onSubmit = e => {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 17)            e.preventDefault();
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 18)            this.props.onSubmit(this.state)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 19)                    this.setState({
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 20) age: ""
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 21) })
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 22) };
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 23)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 24) render(){
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 25)    return(
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 26)                    <form style ={{display: "block",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 27)                    textAlign: "center",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 28)                    marginLeft: "auto",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 29)                    marginRight: "auto"}}>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 30)                    <h1 style={{color: "#1976d2",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 31)                    fontFamily: "Arial",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 32)                    fontWeight: 400,
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 33)                    fontSize: "1 em",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 34)                    lineHeight: "1.4375 em",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 35)                    letterSpacing: "0.00938 em",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 36)                    padding: 0}}>Heart Rate </h1>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 37)                    <h2 style={{color: "#00000099",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 38)                    fontFamily: "Arial",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 39)                    fontWeight: 400,
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 40)                    fontSize: "1 em",
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\tabs\TOOLS\index.js     
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  1) import React from 'react';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  2) import ReactDOM from 'react-dom/client';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  3) import App from './App';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  4)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  5)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  6) const root = ReactDOM.createRoot(document.getElementById('root'));    
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  7) root.render(
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  8)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  9)     <App />
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 10)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 11) );
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 12)
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\tabs\TOOLS\maxrep.js
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  2) import Box from '@mui/material/Box';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  3) import TextField from '@mui/material/TextField';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  4)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  5) export default class Rep extends React.Component {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  6)    state = {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  7)         weight: "",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  8)            reps: ""
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  9)    }
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 10)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 11)    change = (e) => {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 12)            this.setState({
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 13)                            [e.target.name]: e.target.value
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 14)                            });
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 15)    };
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 16)    // resets state
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 17)    onSubmit = e => {
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 18)            e.preventDefault();
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 19)            this.props.onSubmit(this.state)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 20)                    this.setState({
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 21) weight: "",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 22) reps: ""
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 23) })
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 24) };
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 25)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 26) render(){
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 27)    return(
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 28)                    <form style ={{display: "block",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 29)                    textAlign: "center",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 30)                    marginLeft: "auto",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 31)                    marginRight: "auto"}}>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 32)                    <h1 style={{color: "#1976d2",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 33)                    fontFamily: "Arial",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 34)                    fontWeight: 400,
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 35)                    fontSize: "1 em",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 36)                    lineHeight: "1.4375 em",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 37)                    letterSpacing: "0.00938 em",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 38)                    padding: 0}}>1 Rep Max Tool</h1>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 39)                    <h2 style={{color: "#00000099",
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 40)                    fontFamily: "Arial",
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\tabs\TOOLS\protein.js
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800  2) import Box from '@mui/material/Box';
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800  3) import TextField from '@mui/material/TextField';
+0bf93375 (Jack Skupien 2022-11-09 12:01:45 -0800  4) import './TOOLS.css'
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800  5)
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800  6) export default class Protein extends React.Component {
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800  7)    state = {
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800  8) weight: "",
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800  9)            height: ""
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 10)    }
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 11)
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 12)    change = (e) => {
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 13)            this.setState({
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 14)                            [e.target.name]: e.target.value
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 15)                            });
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 16)    };
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 17)    // resets state
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 18)    onSubmit = e => {
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 19)            e.preventDefault();
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 20)            this.props.onSubmit(this.state)
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 21)                    this.setState({
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 22) weight: "",
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 23) height: ""
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 24) })
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 25) };
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 26)
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 27) render(){
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 28)    return(
+0bf93375 (Jack Skupien 2022-11-09 12:01:45 -0800 29)            <tools className="tools">
+0bf93375 (Jack Skupien 2022-11-09 12:01:45 -0800 30)                    <div className="tools-container-three">
+0bf93375 (Jack Skupien 2022-11-09 12:01:45 -0800 31)                    <h1>Protein Calculator</h1>
+0bf93375 (Jack Skupien 2022-11-09 12:01:45 -0800 32)                    <h2>How Much Protein Should You Really</h2><h2>be Eating?</h2>
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 33)                    <Box
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 34)                    component="form"
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 35)                    sx={{
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 36)                            '& > :not(style)': { m: 2, width: '25ch' },50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 37)                    }}
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 38)    noValidate
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 39)            autoComplete="off"
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\tabs\TOOLS\TOOLS.css 
+1c74d657 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-07 13:53:28 -0800   1) @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+1c74d657 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-07 13:53:28 -0800   2)
+1c74d657 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-07 13:53:28 -0800   3) image{
+1c74d657 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-07 13:53:28 -0800   4)     object-fit: cover;      
+1c74d657 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-07 13:53:28 -0800   5)     width: 100%;
+1c74d657 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-07 13:53:28 -0800   6)     height: 100%;
+b995fa00 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-09 06:32:36 -0800   7)     position: absolute;     
+1c74d657 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-07 13:53:28 -0800   8)     z-index: -1;
+b995fa00 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-09 06:32:36 -0800   9)     scale:10%;
+b995fa00 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-09 06:32:36 -0800  10)     scale: fixed;
+77ecce10 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-07 19:38:39 -0800  11) }
+77ecce10 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-07 19:38:39 -0800  12)
+0733b0eb Jack/src/components/tabs/TOOLS/TOOLS.css (Jack Skupien 2022-11-09 09:02:12 -0800  13) .tools{
+0733b0eb Jack/src/components/tabs/TOOLS/TOOLS.css (Jack Skupien 2022-11-09 09:02:12 -0800  14)     background-image: url('/images/MOUNTAIN.jpg');
+b995fa00 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-09 06:32:36 -0800  15)     height: 100%;
+b995fa00 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-09 06:32:36 -0800  16)     width: 100%;
+b995fa00 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-09 06:32:36 -0800  17)     position:fixed;
+c963f0a3 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-08 16:13:13 -0800  18)     display:flex;
+c963f0a3 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-08 16:13:13 -0800  19)     justify-content:center; 
+b995fa00 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-09 06:32:36 -0800  20)     display: fixed;
+c963f0a3 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-08 16:13:13 -0800  21)     background-size:cover;  
+c963f0a3 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-08 16:13:13 -0800  22) }
+c963f0a3 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-08 16:13:13 -0800  23)
+0733b0eb Jack/src/components/tabs/TOOLS/TOOLS.css (Jack Skupien 2022-11-09 09:02:12 -0800  24) .tools-container{
+c963f0a3 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-08 16:13:13 -0800  25)     margin-top: 100px;      
+0733b0eb Jack/src/components/tabs/TOOLS/TOOLS.css (Jack Skupien 2022-11-09 09:02:12 -0800  26)     height: 525px;
+0733b0eb Jack/src/components/tabs/TOOLS/TOOLS.css (Jack Skupien 2022-11-09 09:02:12 -0800  27)     width: 400px;
+0733b0eb Jack/src/components/tabs/TOOLS/TOOLS.css (Jack Skupien 2022-11-09 09:02:12 -0800  28)     background:rgba(35,37,46,0.92);
+c963f0a3 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-08 16:13:13 -0800  29)     /* background: #23252E; 
+*/
+c963f0a3 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-08 16:13:13 -0800  30)     /* opacity:0.5; */      
+77ecce10 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-07 19:38:39 -0800  31)     /* font */
+c963f0a3 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-08 16:13:13 -0800  32)     display: flex;
+77ecce10 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-07 19:38:39 -0800  33)     flex-direction: column; 
+77ecce10 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-07 19:38:39 -0800  34)     justify-content: center;77ecce10 Jack/src/components/pages/LSF/LSF.css    (Jack Skupien 2022-11-07 19:38:39 -0800  35)     font-family: 'Orbitron', sans-serif;
+
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\Dropdown.css
+0&display=swap');
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  2) 
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  3) .dropdown-menu {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  4)   background: #23252E;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  5)   width: 200px;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  6)   position: absolute;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  7)   top: 80px;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  8)   list-style: none;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  9)   text-align: start;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 10) }
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 11)   
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 12)   .dropdown-menu li {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 13)   background: #23252E;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 14)   cursor: pointer;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 15) }
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 16)   
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 17)   .dropdown-menu li:hover {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 18)   background-color: #014b21;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 19) }
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 20)   
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 21)   .dropdown-menu.clicked {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 22)     display: none;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 23)   }
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 24)   
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 25)   .dropdown-link {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 26)     font-family: 'Orbitron', sans-serif;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 27)     display: block;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 28)     height: 100%;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 29)     width: 100%;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 30)     text-decoration: none;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 31)     color: #fff;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 32)     padding: 16px;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 33)   }
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 34)   
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 35)   @media screen and (max-width: 960px){
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 37)       display: none;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 38)     }
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 39)   }
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\Dropdown.js 
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  1) import React, { useState } from 'react';
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  2) import { MenuItems } from './MenuItems.js';
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  3) import './Dropdown.css';
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  4) import { Link } from 'react-router-dom';
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  5)
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  6) function Dropdown() {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  7)   const [click, setClick] = useState(false);
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  8)
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  9)   const handleClick = () => setClick(!click);
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 10)
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 11)   return (
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 12)     <>
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 13)       <ul
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 14)         onClick={handleClick}
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 15)         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'} 
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 16)       >
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 17)         {MenuItems.map((item, index) => {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 18)           return (
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 19)             <li key={index}>
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 20)               <Link
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 21)                 className={item.cName}
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 22)                 to={item.path}
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 23)                 onClick={() => setClick(false)}
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 25)                 {item.title}
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 26)               </Link>
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 27)             </li>
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 28)           );
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 29)         })}
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 30)       </ul>
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 31)     </>
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 32)   );
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 33) }
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 34)
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 35) export default Dropdown;
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\MenuItems.js
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  1) export const MenuItems = [
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  2)     {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  3)       title: 'BMI',
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  4)       path: '/BMI',
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  5)       cName: 'dropdown-link'
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  6)     },
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  7)     {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  8)       title: 'Calories',
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  9)       path: '/cal',
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 10)       cName: 'dropdown-link'
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 11)     },
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 12)     {
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 13)       title: 'Protein',
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 14)       path: '/protein',
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 15)       cName: 'dropdown-link'
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 16)     },
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 17)     {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 18)       title: 'Heart Rate',
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 19)       path: '/heartrate',
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 20)       cName: 'dropdown-link'
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 21)     },
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 22)     {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 23)       title: 'Maximum Rep',
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 24)       path: '/maxrep',
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 25)       cName: 'dropdown-link'
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 26)     }
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 27)   ];
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\Navbar.css  
+00&display=swap');
+1b784cc8 (Jack         2022-11-01 13:18:23 -0400   2)
+e833de14 (Jack         2022-10-13 09:08:42 -0400   3) .navbar {
+7efaafe1 (Jack         2022-10-27 15:38:04 -0400   4)     background: #23252E;
+7efaafe1 (Jack         2022-10-27 15:38:04 -0400   5)     height: 85px;
+e833de14 (Jack         2022-10-13 09:08:42 -0400   6)     display: flex;
+e833de14 (Jack         2022-10-13 09:08:42 -0400   7)     justify-content: center;
+e833de14 (Jack         2022-10-13 09:08:42 -0400   8)     align-items: center;
+7efaafe1 (Jack         2022-10-27 15:38:04 -0400   9)     font-size: 1.25rem;
+e833de14 (Jack         2022-10-13 09:08:42 -0400  10)     position: sticky;
+e833de14 (Jack         2022-10-13 09:08:42 -0400  11)     top: 0;
+e833de14 (Jack         2022-10-13 09:08:42 -0400  12)     z-index: 999;
+e833de14 (Jack         2022-10-13 09:08:42 -0400  13)   }
+e833de14 (Jack         2022-10-13 09:08:42 -0400  14)
+e833de14 (Jack         2022-10-13 09:08:42 -0400  15)   .navbar-container {
+e833de14 (Jack         2022-10-13 09:08:42 -0400  16)     display: flex;
+7efaafe1 (Jack         2022-10-27 15:38:04 -0400  17)     justify-content: left;
+e833de14 (Jack         2022-10-13 09:08:42 -0400  18)     align-items: center;
+e833de14 (Jack         2022-10-13 09:08:42 -0400  19)     height: 80px;
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  20)
+e833de14 (Jack         2022-10-13 09:08:42 -0400  21)   }
+e833de14 (Jack         2022-10-13 09:08:42 -0400  22)
+e833de14 (Jack         2022-10-13 09:08:42 -0400  23)   .navbar-logo {
+7efaafe1 (Jack         2022-10-27 15:38:04 -0400  24)     margin-left: -40px;
+7efaafe1 (Jack         2022-10-27 15:38:04 -0400  25)   }
+7efaafe1 (Jack         2022-10-27 15:38:04 -0400  26)
+7efaafe1 (Jack         2022-10-27 15:38:04 -0400  27)   .navbar-logo video{
+1b784cc8 (Jack         2022-11-01 13:18:23 -0400  28)     justify-self: flex-start;
+7efaafe1 (Jack         2022-10-27 15:38:04 -0400  29)     object-fit: contain;
+7efaafe1 (Jack         2022-10-27 15:38:04 -0400  30)     scale: 60%;
+1b784cc8 (Jack         2022-11-01 13:18:23 -0400  31)     display: flex;
+1b784cc8 (Jack         2022-11-01 13:18:23 -0400  32)     position: relative;
+e833de14 (Jack         2022-10-13 09:08:42 -0400  33)   }
+e833de14 (Jack         2022-10-13 09:08:42 -0400  34)
+7efaafe1 (Jack         2022-10-27 15:38:04 -0400  35)   /* .navbar-logo:hover{
+7efaafe1 (Jack         2022-10-27 15:38:04 -0400  36)
+e833de14 (Jack         2022-10-13 09:08:42 -0400  37)   } */
+7efaafe1 (Jack         2022-10-27 15:38:04 -0400  38)
+e833de14 (Jack         2022-10-13 09:08:42 -0400  39)   .fa-typo3 {
+PS C:\Users\slimt\GitFit> git blame Jack\src\components\Navbar.js 
+e833de14 (Jack         2022-10-13 09:08:42 -0400  2) import {Link} from 'react-router-dom';
+e833de14 (Jack         2022-10-13 09:08:42 -0400  3) import { Button } from './Button';
+e833de14 (Jack         2022-10-13 09:08:42 -0400  4) import './Navbar.css';
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  5) import Dropdown from './Dropdown';
+e833de14 (Jack         2022-10-13 09:08:42 -0400  6)
+e833de14 (Jack         2022-10-13 09:08:42 -0400  7) function Navbar() {
+e833de14 (Jack         2022-10-13 09:08:42 -0400  8)   const [click,setClick]=useState(false);
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800  9)   const [dropdown, setDropdown] = useState(false);
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 10)
+e833de14 (Jack         2022-10-13 09:08:42 -0400 11)   const handleClick=()=>setClick(!click);
+e833de14 (Jack         2022-10-13 09:08:42 -0400 12)   const closeMobileMenu=()=>setClick(false);
+e833de14 (Jack         2022-10-13 09:08:42 -0400 13)   const [button,setButton]=useState(true);
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 14)
+e833de14 (Jack         2022-10-13 09:08:42 -0400 15)   const showButton=()=>{
+e833de14 (Jack         2022-10-13 09:08:42 -0400 16)     if(window.innerWidth<=960){
+e833de14 (Jack         2022-10-13 09:08:42 -0400 17)         setButton(false);
+e833de14 (Jack         2022-10-13 09:08:42 -0400 18)     }else{
+e833de14 (Jack         2022-10-13 09:08:42 -0400 19)         setButton(true);
+e833de14 (Jack         2022-10-13 09:08:42 -0400 20)     }
+e833de14 (Jack         2022-10-13 09:08:42 -0400 21)   };
+e833de14 (Jack         2022-10-13 09:08:42 -0400 22)
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 23)   const onMouseEnter = () => {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 24)     if (window.innerWidth < 960) {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 25)       setDropdown(false);
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 26)     } else {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 27)       setDropdown(true);
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 28)     }
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 29)   };
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 30)
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 31)   const onMouseLeave = () => {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 32)     if (window.innerWidth < 960) {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 33)       setDropdown(false);
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 34)     } else {
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 35)       setDropdown(false);
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 36)     }
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 37) };
+1c74d657 (Jack Skupien 2022-11-07 13:53:28 -0800 38)
+e833de14 (Jack         2022-10-13 09:08:42 -0400 39)   useEffect(()=>{showButton();},[]);
+e833de14 (Jack         2022-10-13 09:08:42 -0400 40)
+PS C:\Users\slimt\GitFit> git blame Jack\src\App.js
+e833de14 (Jack         2022-10-13 09:08:42 -0400  1) import React from 'react'
+e833de14 (Jack         2022-10-13 09:08:42 -0400  2) import Navbar from './components/Navbar';
+e833de14 (Jack         2022-10-13 09:08:42 -0400  3) import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+e833de14 (Jack         2022-10-13 09:08:42 -0400  4) import './App.css';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  5)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  6) //home
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  7) import Home from './components/tabs/Home';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  8)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800  9) //LSF
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 10) import Login from './components/tabs/LSF/login';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 11) import ForgotP from './components/tabs/LSF/forgotP';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 12) import SignUp from './components/tabs/LSF/signUp';
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 13)
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 14) //TOOLS
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 15) import BMI from './components/tabs/TOOLS/bmi.js'
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 16) import Calorie from './components/tabs/TOOLS/calorie.js'
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 17) import Rep from './components/tabs/TOOLS/maxrep.js'
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 18) import Rate from './components/tabs/TOOLS/heart_rate.js'
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 19) import Protein from './components/tabs/TOOLS/protein.js'
+49097ada (Jack         2022-10-27 20:48:21 -0400 20)
+e833de14 (Jack         2022-10-13 09:08:42 -0400 21) function App() {
+e833de14 (Jack         2022-10-13 09:08:42 -0400 22)   return (
+e833de14 (Jack         2022-10-13 09:08:42 -0400 23)     <>
+e833de14 (Jack         2022-10-13 09:08:42 -0400 24)       <Router>
+e833de14 (Jack         2022-10-13 09:08:42 -0400 25)         <Navbar />
+e833de14 (Jack         2022-10-13 09:08:42 -0400 26)         <Routes>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 27)           {/* HOME */}
+e833de14 (Jack         2022-10-13 09:08:42 -0400 28)           <Route exact path="/" element={<Home/>}/>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 29)           {/* LSF */}
+49097ada (Jack         2022-10-27 20:48:21 -0400 30)           <Route exact path="/login" element={<Login/>}/>
+49097ada (Jack         2022-10-27 20:48:21 -0400 31)           <Route exact path="/forgotpassword" element={<ForgotP/>}/>  
+49097ada (Jack         2022-10-27 20:48:21 -0400 32)           <Route exact path="/signup" element={<SignUp/>}/>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 33)           {/* TOOLS */}
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 34)           <Route exact path="/BMI" element={<BMI/>}/>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 35)           <Route exact path="/cal" element={<Calorie/>}/>
+50ea18ff (Jack Skupien 2022-11-09 11:40:14 -0800 36)           <Route exact path="/protein" element={<Protein/>}/>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 37)           <Route exact path="/heartrate" element={<Rate/>}/>
+0733b0eb (Jack Skupien 2022-11-09 09:02:12 -0800 38)           <Route exact path="/maxrep" element={<Rep/>}/>
+e833de14 (Jack         2022-10-13 09:08:42 -0400 39)         </Routes>

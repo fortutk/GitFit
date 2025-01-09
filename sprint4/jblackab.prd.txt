@@ -1,0 +1,45 @@
+Product Requirements Document
+
+Name: John Blackaby
+
+Product Name: GitFit
+
+Background
+
+Going to the Gym can be intimidating, especially when you are new to the gym. When going for the first time, you don't know
+what you are doing, how to start working out, or where to go once you have started. Our product will make it easy and comfortable
+for new someone new or old to not only start in the gym, but also keep up with their progress, get workouts, know how much to eat, how
+much water to drink, and store all of this information under your profile! Our app offers all the essentials that you will need
+when going to the gym.
+
+Project Overview
+
+Our project will help people in the gym keep track of their progress in the gym, but also offer exercises based on what you
+want to do in the gym, help you know how much to eat and what to eat in order to reach your goal from where you are now,
+and let you know how much water to drink in order to stay healthy in the gym. We want to offer a space where our customer can log
+the workouts that they have been doing. We also will offer suggested workouts for the goals that our customer is trying to accomplish,
+and a wide array of tools to complete this.
+
+Features
+
+1. Create an Account. As a new user, I want to register by creating a username and password so that the system can remember me and my data
+2. Forgot Password. As a user, I want to be able to reset my password if I forget it so that I can log in to my account
+3. Protein Calculator. As a user, I want to be able to calculate how much protein I need to consume so that I can meet my goals
+4. BMI Calculator. As a user, I want to be able to calculate my BMI so that I can see if I am overweight or not
+5. Water Calculator. As a user, I want to be able to calculate how much water I need to drink so that I can stay hydrated
+6. Heart Rate Calculator. As a user, I want to be able to calculate what my heart rate should be so that I can see if I am in the right zone
+7. Max Rep Calculator. As a user, I want to be able to calculate what my max rep should be so that I can see what weight I should be lifting and what my max rep should be
+8. Calorie Calculator. As a user, I want to be able to calculate the number of calories I burn during a typical day so that I can see how many calories I need to consume and burn
+9. Workout Tracking. As a user, I want to be able to see the workouts I have done in the past.
+10. Workout reccomendations. As a user, I want to find new workouts based on what my goals are in the gym.
+
+
+Technologies to be used
+
+The technologies that will be used in this project are:
+1. React
+2. Javascript
+3. HTML
+4. CSS
+5. MUI
+6. Firebase

@@ -1,0 +1,1052 @@
+app.js
+
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   23)         if(this.state.fields.Goal === "Gain" || this.state.fields.Goal === "gain"){
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   24)           if(this.state.fields.DesiredBody === "Stronger" || this.state.fields.DesiredB>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   30)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   32)               Leg Extension: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   34)               Front Squat: 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   36)               Leg Curl: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   38)               Calf Raise: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   40)               Some Form of Curl: 2 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   42)               Bicep Curls (Form can vary): 2 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   44)               Hanging Leg raise: 3 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   49)               Bench Press: 3 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   51)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   53)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   55)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   57)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   59)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   61)               Arnold Press: 4 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   63)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   65)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   70)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   72)               Row (either bent over barbell or with dumb bells on an incline bench): 4 > 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   74)               Leg Press or front squat: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   76)               Calf raises: 4 x 15 - 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   78)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   80)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   85)               Deadlift (If going for Strength): 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   87)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   89)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   91)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   93)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   95)               Face Pull: 4 x 20 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500   97)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  102)           else if(this.state.fields.DesiredBody === "Shred" ||  this.state.fields.Desir>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  104)             Day 1
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  106)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  108)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  110)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  112)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  114)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  116)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  118)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  120)               Hanging Leg raise: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  125)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  127)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  129)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  131)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  133)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  135)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  137)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  139)               Tricep Pressdown: 3 x 15 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  141)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  146)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  148)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  150)               Leg Press or front squat: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  152)               Calf raises: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  154)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  156)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  161)               Deadlift (If going for Strength): 4 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  163)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  165)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  167)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  169)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  171)               Face Pull: 4 x 20 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  173)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  174)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  178)           else if(this.state.fields.DesiredBody === "Cut" ||  this.state.fields.Desired>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  180)            Day 1
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  182)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  184)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  186)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  188)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  190)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  192)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  194)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  196)               Hanging Leg raise: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  201)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  203)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  205)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  207)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  209)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  211)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  213)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  215)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  217)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  222)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  224)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  226)               Leg Press or front squat: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  228)               Calf raises: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  230)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  232)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  237)               Deadlift (If going for Strength): 4 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  239)               Dips: 3 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  241)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  243)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  245)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  247)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  249)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  250)               <br/>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  254)           else return <p> error: {this.state.fields.DesiredBody} is not an acceptable i>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  256)         else if(this.state.fields.Goal === "Lose" || this.state.fields.Goal === "lose"){
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  257)           if(this.state.fields.DesiredBody === "Stronger" ||  this.state.fields.Desired>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  261)             Day 1
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  262)             <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  263)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  265)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  267)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  269)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  271)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  273) 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  275)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  277)               Hanging Leg raise: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  280)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  285)               Bench Press: 3 x 6 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  287)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  289)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  291)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  293)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  295)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  297)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  299)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  301)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  303)               <br/>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  304)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  309)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  311)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  313)               Leg Press or front squat: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  315)               Calf raises: 4 x 15 - 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  317)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  319)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  321)               <br/>    
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  322)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  327)               Deadlift (If going for Strength): 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  329)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  331)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  333)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  335)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  337)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  339)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  340)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  344)           else if(this.state.fields.DesiredBody === "Shred" ||  this.state.fields.Desir>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  348)             Day 1
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  349)             <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  350)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  352)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  354)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  356)               Leg Curl: 4 x 12 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  358)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  360)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  362)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  364)               Hanging Leg raise: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  367)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  372)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  374)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  376)               Lateral raises, either Egyptian or dumbbell: 3 x 15 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  378)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  380)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  382)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  384)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  386)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  388)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  391)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  396)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  398)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  400)               Leg Press or front squat: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  402)               Calf raises: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  404)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  406)               Curls (Hammer): 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  409)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  414)               Deadlift (If going for Strength): 4 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  416)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  418)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  420)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  422)               Cable Pull over or Dumbell pull over: 4 x 1
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  424)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  426)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  427)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  431)           else if(this.state.fields.DesiredBody === "Cut" ||  this.state.fields.Desired>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  435)             Day 1
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  436)             <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  437)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  439)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  441)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  443)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  445)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  447)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  449)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  451)               Hanging Leg raise: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  454)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  459)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  461)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  463)               Lateral raises, either Egyptian or dumbbell: 3 x 15 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  465)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  467)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  469)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  471)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  473)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  475)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  478)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  483)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  485)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  487)               Leg Press or front squat: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  489)               Calf raises: 4 x 20 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  491)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  493)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  495)               <br/>  
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  496)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  498)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  501)               Deadlift (If going for Strength): 4 x 6 (optional)
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  503)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  505)               Glute Ham Raise: 3 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  507)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  509)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  511)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  513)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  514)               <br/>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  518)           else return <p> error: {this.state.fields.DesiredBody} is not an acceptable i>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  520)         else if(this.state.fields.Goal === "Maintain" || this.state.fields.Goal === "ma>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  521)           if(this.state.fields.DesiredBody === "Stronger" ||  this.state.fields.Desired>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  525)             Day 1
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  527)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  529)               Leg Extension: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  531)               Front Squat: 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  533)               Leg Curl: 4 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  535)               Calf Raise: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  537)               Some Form of Curl: 2 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  539)               Bicep Curls (Form can vary): 2 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  541)               Hanging Leg raise: 3 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  546)               Bench Press: 3 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  548)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  550)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  552)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  554)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  556)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  558)               Arnold Press: 4 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  560)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  562)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  567)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  569)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  571)               Leg Press or front squat: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  573)               Calf raises: 4 x 15 - 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  575)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  577)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  582)               Deadlift (If going for Strength): 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  584)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  586)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  588)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  590)               Cable Pull over or Dumbell pull over: 4 x 12 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  592)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  594)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  596)               <br/>   
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  599)           else if(this.state.fields.DesiredBody === "Shred" ||  this.state.fields.Desir>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  603)             Day 1
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  604)             <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  605)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  607)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  609)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  611)               Leg Curl: 4 x 12 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  613)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  615)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  617)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  619)               Hanging Leg raise: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  624)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  626)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  628)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  630)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  632)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  634)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  636)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  638)               Tricep Pressdown: 3 x 15 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  640)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  645)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  647)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  649)               Leg Press or front squat: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  651)               Calf raises: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  653)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  655)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  660)               Deadlift (If going for Strength): 4 x 6 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  662)               Dips: 3 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  664)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  666)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  668)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  670)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  672)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  673)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  677)           else if(this.state.fields.DesiredBody === "Cut" ||  this.state.fields.Desired>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  681)             Day 1
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  682)             <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  683)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  685)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  687)               Front Squat: 3 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  689)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  691)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  693)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  695)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  697)               Hanging Leg raise: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  702)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  704)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  706)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  708)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  710)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  712)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  714)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  716)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  718)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  723)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  725)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  727)               Leg Press or front squat: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  729)               Calf raises: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  731)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  733)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  738)               Deadlift (If going for Strength): 4 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  740)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  742)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  744)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  746)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  748)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  750)               Skull Crushers: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  755)           else return <p> error: {this.state.fields.DesiredBody} is not an acceptable i>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500  757)         else return <p> error: {this.state.fields.Goal} is not an acceptable input </p> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  760)         if(this.state.fields.Goal === "Gain" || this.state.fields.Goal === "gain"){
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  761)           if(this.state.fields.DesiredBody === "Stronger" ||  this.state.fields.Desired>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  767)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  769)               Leg Extension: 4 x 12 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  771)               Front Squat: 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  773)               Leg Curl: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  775)               Calf Raise: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  777)               Some Form of Curl: 2 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  779)               Bicep Curls (Form can vary): 2 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  780)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  781)               Hanging Leg raise: 3 x 12 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  786)               Bench Press: 3 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  788)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  790)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  792)               Lateral Pulldown: 4 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  794)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  796)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  798)               Arnold Press: 4 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  800)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  802)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  807)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  809)               Row (either bent over barbell or with dumb bells on an incline bench): 4 > 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  811)               Leg Press or front squat: 4 x 12 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  813)               Calf raises: 4 x 15 - 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  815)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  817)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  822)               Deadlift (If going for Strength): 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  824)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  826)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  828)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  830)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  832)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  834)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  839)               Overhead Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  841)               Egyptian Lateral raise: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  843)               Seated row: 3 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  845)               Hip Abduction: 3 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  847)               Dumbbell Curl: 3 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  849)               Crunches: 3 x 15 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  851)               Calf raises: 3 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  856)           else if(this.state.fields.DesiredBody === "Shred" || this.state.fields.Desire>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  862)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  864)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  866)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  868)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  870)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  872)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  874)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  876)               Hanging Leg raise: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  881)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  883)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  885)               Lateral raises, either Egyptian or dumbbell: 3 x 15 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  887)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  889)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  891)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  893)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  895)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  897)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  902)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  904)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  906)               Leg Press or front squat: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  908)               Calf raises: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  910)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  912)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  917)               Deadlift (If going for Strength): 4 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  919)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  921)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  923)               Leg Extensions: 4 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  925)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  927)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  929)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  934)               Overhead Press: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  936)               Egyptian Lateral raise: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  938)               Seated row: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  940)               Hip Abduction: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  942)               Dumbbell Curl: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  944)               Crunches: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  946)               Calf raises: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  951)           else if(this.state.fields.DesiredBody === "Cut" || this.state.fields.DesiredB>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  957)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  959)               Leg Extension: 4 x 15 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  961)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  963)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  965)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  967)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  969)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  971)               Hanging Leg raise: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  976)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  978)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  980)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  982)               Lateral Pulldown: 4 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  984)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  986)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  988)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  990)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  992)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  997)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500  999)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1001)               Leg Press or front squat: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1003)               Calf raises: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1005)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1007)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1012)               Deadlift (If going for Strength): 4 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1014)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1016)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1018)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1020)               Cable Pull over or Dumbell pull over: 4 x 12 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1022)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1024)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1029)               Overhead Press: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1031)               Egyptian Lateral raise: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1033)               Seated row: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1035)               Hip Abduction: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1037)               Dumbbell Curl: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1039)               Crunches: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1041)               Calf raises: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1046)           else return <p> error: {this.state.fields.DesiredBody} is not an acceptable i>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1048)         else if(this.state.fields.Goal === "Lose" || this.state.fields.Goal === "lose"){
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1049)           if(this.state.fields.DesiredBody === "Stronger" || this.state.fields.DesiredB>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1055)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1057)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1059)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1061)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1063)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1065)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1067)               Bicep Curls (Form can vary): 3 x 8 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1069)               Hanging Leg raise: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1072)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1073)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1074)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1077)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1079)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1081)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1083)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1085)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1087)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1089)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1091)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1093)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1095)               <br/>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1096)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1097)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1098)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1101)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1103)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1105)               Leg Press or front squat: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1107)               Calf raises: 4 x 15 - 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1109)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1111)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1112)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1113)               <br/>    
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1114)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1115)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1119)               Deadlift (If going for Strength): 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1121)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1123)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1125)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1127)               Cable Pull over or Dumbell pull over: 4 x 1
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1129)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1131)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1132)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1136)               Overhead Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1138)               Egyptian Lateral raise: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1140)               Seated row: 3 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1142)               Hip Abduction: 3 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1144)               Dumbbell Curl: 3 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1146)               Crunches: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1148)               Calf raises: 3 x 12
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1151)               <br/>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1152)               <br/>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1153)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1154)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1155)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1158)           else if(this.state.fields.DesiredBody === "Shred" || this.state.fields.Desire>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1164)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1166)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1168)               Front Squat: 3 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1170)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1172)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1174)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1176)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1178)               Hanging Leg raise: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1181)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1182)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1183)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1186)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1188)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1190)               Lateral raises, either Egyptian or dumbbell: 3 x 15 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1192)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1194)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1196)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1198)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1200)               Tricep Pressdown: 3 x 15 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1202)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1205)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1206)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1207)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1210)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1212)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1214)               Leg Press or front squat: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1216)               Calf raises: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1218)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1220)               Curls (Hammer): 3 x 15 
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1223)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1224)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1225)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1228)               Deadlift (If going for Strength): 4 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1230)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1232)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1234)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1236)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1238)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1240)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1245)               Overhead Press: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1247)               Egyptian Lateral raise: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1249)               Seated row: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1251)               Hip Abduction: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1253)               Dumbbell Curl: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1255)               Crunches: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1257)               Calf raises: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1260)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1261)               <br/>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1262)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1263)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1264)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1267)           else if(this.state.fields.DesiredBody === "Cut" || this.state.fields.DesiredB>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1273)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1275)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1277)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1279)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1281)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1283)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1285)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1287)               Hanging Leg raise: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1290)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1291)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1292)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1295)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1297)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1299)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1301)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1303)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1305)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1307)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1309)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1311)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1314)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1315)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1316)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1319)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1321)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1323)               Leg Press or front squat: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1325)               Calf raises: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1327)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1329)               Curls (Hammer): 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1332)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1333)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1334)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1337)               Deadlift (If going for Strength): 4 x 6 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1339)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1341)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1343)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1345)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1347)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1349)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1354)               Overhead Press: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1356)               Egyptian Lateral raise: 4 x 12 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1358)               Seated row: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1360)               Hip Abduction: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1362)               Dumbbell Curl: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1364)               Crunches: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1366)               Calf raises: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1369)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1370)               <br/>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1371)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1372)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1373)               <br/>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1376)           else return <p> error: {this.state.fields.DesiredBody} is not an acceptable i>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1378)         else if(this.state.fields.Goal === "Maintain" || this.state.fields.Goal === "ma>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1379)           if(this.state.fields.DesiredBody === "Stronger" || this.state.fields.DesiredB>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1385)               Squat: 4 x 4 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1387)               Leg Extension: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1389)               Front Squat: 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1391)               Leg Curl: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1393)               Calf Raise: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1395)               Some Form of Curl: 2 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1397)               Bicep Curls (Form can vary): 2 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1398)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1399)               Hanging Leg raise: 3 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1404)               Bench Press: 3 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1406)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1408)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1410)               Lateral Pulldown: 4 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1412)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1414)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1416)               Arnold Press: 4 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1418)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1420)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1425)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1427)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1429)               Leg Press or front squat: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1431)               Calf raises: 4 x 15 - 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1433)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1435)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1440)               Deadlift (If going for Strength): 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1442)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1444)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1446)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1448)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1450)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1452)               Skull Crushers: 3 x 15 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1457)               Overhead Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1459)               Egyptian Lateral raise: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1461)               Seated row: 3 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1463)               Hip Abduction: 3 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1465)               Dumbbell Curl: 3 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1467)               Crunches: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1469)               Calf raises: 3 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1474)           else if(this.state.fields.DesiredBody === "Shred" || this.state.fields.Desire>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1480)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1482)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1484)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1486)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1488)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1490)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1492)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1494)               Hanging Leg raise: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1499)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1501)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1503)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1505)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1507)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1509)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1511)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1513)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1515)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1520)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1522)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1524)               Leg Press or front squat: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1526)               Calf raises: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1528)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1530)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1535)               Deadlift (If going for Strength): 4 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1537)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1539)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1541)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1543)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1545)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1547)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1552)               Overhead Press: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1554)               Egyptian Lateral raise: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1556)               Seated row: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1558)               Hip Abduction: 4 x 20 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1560)               Dumbbell Curl: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1562)               Crunches: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1564)               Calf raises: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1567)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1568)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1571)           else if(this.state.fields.DesiredBody === "Cut" || this.state.fields.DesiredB> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1577)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1579)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1581)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1583)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1585)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1587)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1589)               Bicep Curls (Form can vary): 3 x 8 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1591)               Hanging Leg raise: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1596)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1598)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1600)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1602)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1604)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1606)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1608)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1610)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1612)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1617)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1619)               Row (either bent over barbell or with dumb bells on an incline bench): 4 >
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1621)               Leg Press or front squat: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1623)               Calf raises: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1625)               Upright row either cable or barbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1627)               Curls (Hammer): 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1632)               Deadlift (If going for Strength): 4 x 6 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1634)               Dips: 3 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1636)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1638)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1640)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1642)               Face Pull: 4 x 20 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1644)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1649)               Overhead Press: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1651)               Egyptian Lateral raise: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1653)               Seated row: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1655)               Hip Abduction: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1657)               Dumbbell Curl: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1659)               Crunches: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1661)               Calf raises: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1664)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1665)               <br/>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1668)           else return <p> error: {this.state.fields.DesiredBody} is not an acceptable i>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1670)         else return <p> error: {this.state.fields.Goal} is not an acceptable input </p> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1673)         if(this.state.fields.Goal === "Gain" || this.state.fields.Goal === "gain"){
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1674)             if(this.state.fields.DesiredBody === "Stronger" || this.state.fields.Desire>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1680)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1681)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1682)               Leg Extension: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1684)               Front Squat: 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1686)               Leg Curl: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1688)               Calf Raise: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1690)               Some Form of Curl: 2 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1692)               Bicep Curls (Form can vary): 2 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1694)               Hanging Leg raise: 3 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1699)               Bench Press: 3 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1701)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1703)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1705)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1707)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1709)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1711)               Arnold Press: 4 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1713)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1715)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1718)             Day 3:
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1719)             <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1720)               Deadlift (If going for Strength): 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1722)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1724)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1726)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1728)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1730)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1732)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1734)               <br/>  
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1737)             else if(this.state.fields.DesiredBody === "Shred" || this.state.fields.Desi>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1743)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1745)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1747)               Front Squat: 3 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1749)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1751)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1753)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1755)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1757)               Hanging Leg raise: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1762)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1764)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1766)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1768)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1770)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1772)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1774)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1776)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1778)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1781)             Day 3:
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1782)             <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1783)               Deadlift (If going for Strength): 4 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1785)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1787)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1789)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1791)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1793)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1795)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1796)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1800)             else if(this.state.fields.DesiredBody === "Cut" || this.state.fields.Desire>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1806)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1808)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1810)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1812)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1814)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1816)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1818)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1820)               Hanging Leg raise: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1825)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1827)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1829)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1831)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1833)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1835)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1837)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1839)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1841)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1844)             Day 3:
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1845)             <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1846)               Deadlift (If going for Strength): 4 x 6 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1848)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1850)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1852)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1854)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1856)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1858)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1859)               <br/>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1863)             else return <p> error: {this.state.fields.DesiredBody} is not an acceptable>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1865)         else if(this.state.fields.Goal === "Lose" || this.state.fields.Goal === "lose"){
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1866)           if(this.state.fields.DesiredBody === "Stronger" || this.state.fields.DesiredB>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1872)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1874)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1876)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1878)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1880)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1882)               Some Form of Curl: 2 x 20 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1884)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1886)               Hanging Leg raise: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1889)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1894)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1896)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1898)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1900)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1902)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1904)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1906)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1908)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1910)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1913)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1915)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1916)             Day 3:
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1917)             <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1918)               Deadlift (If going for Strength): 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1920)               Dips: 3 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1922)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1924)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1926)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1928)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1930)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1931)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1932)               <br/>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1933)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1938)           else if(this.state.fields.DesiredBody === "Shred" || this.state.fields.Desire>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1944)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1946)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1948)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1950)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1952)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1954)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1956)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1958)               Hanging Leg raise: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1961)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1966)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1968)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1970)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1972)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1974)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1976)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1978)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1980)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1982)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 1985)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1988)             Day 3:
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1989)             <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1990)               Deadlift (If going for Strength): 4 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1992)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1994)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1996)               Leg Extensions: 4 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 1998)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2000)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2002)               Skull Crushers: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2005)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2008)           else if(this.state.fields.DesiredBody === "Cut" || this.state.fields.DesiredB>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2014)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2016)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2018)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2020)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2022)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2024)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2026)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2028)               Hanging Leg raise: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2031)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2036)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2038)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2040)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2042)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2044)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2046)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2048)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2050)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2052)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2055)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2058)             Day 3:
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2059)             <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2060)               Deadlift (If going for Strength): 4 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2062)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2064)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2066)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2068)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2070)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2072)               Skull Crushers: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2075)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2078)           else return <p> error: {this.state.fields.DesiredBody} is not an acceptable i>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2080)         else if(this.state.fields.Goal === "Maintain" || this.state.fields.Goal  === "m>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2081)           if(this.state.fields.DesiredBody === "Stronger" || this.state.fields.DesiredB>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2087)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2089)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2091)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2093)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2095)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2097)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2099)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2101)               Hanging Leg raise: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2104)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2109)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2111)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2113)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2115)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2117)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2119)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2121)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2123)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2125)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2128)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2130)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2131)             Day 3:
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2132)             <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2133)               Deadlift (If going for Strength): 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2135)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2137)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2139)               Leg Extensions: 4 x 10 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2141)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2143)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2145)               Skull Crushers: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2148)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2149)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2150)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2153)           else if(this.state.fields.DesiredBody === "Shred" || this.state.fields.Desire>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2159)               Squat: 4 x 4 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2161)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2163)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2165)               Leg Curl: 4 x 12 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2167)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2169)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2171)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2173)               Hanging Leg raise: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2176)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2181)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2183)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2185)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2187)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2189)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2191)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2193)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2195)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2197)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2200)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2203)             Day 3:
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2204)             <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2205)               Deadlift (If going for Strength): 4 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2207)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2209)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2211)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2213)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2215)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2217)               Skull Crushers: 3 x 15
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2220)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+e3979f59 (John Blackaby 2022-11-09 13:10:13 -0500 2223)           else if(this.state.fields.DesiredBody === "Cut" || this.state.fields.DesiredB>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2227)             Day 1
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2229)               Squat: 4 x 4
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2230)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2231)               Leg Extension: 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2232)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2233)               Front Squat: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2234)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2235)               Leg Curl: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2236)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2237)               Calf Raise: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2238)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2239)               Some Form of Curl: 2 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2240)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2241)               Bicep Curls (Form can vary): 3 x 8
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2242)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2243)               Hanging Leg raise: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2244)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2245)               <br/> 
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2246)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2247)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2248)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2249)             Day 2:
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2251)               Bench Press: 3 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2252)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2253)               Overhead Press/raised bench press (alternating through the weeks): 4 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2254)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2255)               Lateral raises, either Egyptian or dumbbell: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2256)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2257)               Lateral Pulldown: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2258)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2259)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench): 3 x>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2260)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2261)               Romanian Deadlift or Barbell Hip Thrust: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2262)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2263)               Arnold Press: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2264)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2265)               Tricep Pressdown: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2266)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2267)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2268)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2269)               <br/> 
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2270)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2271)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2272)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2275)               Deadlift (If going for Strength): 4 x 6
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2276)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2277)               Dips: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2278)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2279)               Glute Ham Raise: 3 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2280)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2281)               Leg Extensions: 4 x 10
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2282)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2283)               Cable Pull over or Dumbell pull over: 4 x 12
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2284)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2285)               Face Pull: 4 x 20
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2286)               <br/> 
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2287)               Skull Crushers: 3 x 15
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2288)               <br/>
+bc7f4dfb (John Blackaby 2022-11-09 12:54:07 -0500 2289)               <br/>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2290)               Cardio for 15-20 minutes keeping heart rate above {this.state.fields.Hear>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2293)           else return <p> error: {this.state.fields.DesiredBody} is not an acceptable i>
+ae880c9c (John Blackaby 2022-11-09 16:46:34 -0500 2295)         else return <p> error: {this.state.fields.Goal} is not an acceptable input </p> 
+
+Form.js
+
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500  7)        DaysAWeek: "",
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500  8)        HeartRate: ""
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500 23)             DaysAWeek:"",
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500 24)             HeartRate:""
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500 25)             
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500 30)             DaysAWeek:"",
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500 31)             HeartRate:""
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500 32) 
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500 61)                 onChange={e => this.change(e)}
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500 62)                  />
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500 63)                  <br />
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500 64)                  <input 
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500 65)                 name="HeartRate"
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500 66)                 placeholder ="Heart Rate"
+ae880c9c (John Blackaby     2022-11-09 16:46:34 -0500 67)                 value={this.state.HeartRate} 
+00000000 (Not Committed Yet 2022-11-10 21:34:41 -0500 74)                 <h5>
+bc7f4dfb (John Blackaby     2022-11-09 12:54:07 -0500 80)                     <br />
+bc7f4dfb (John Blackaby     2022-11-09 12:54:07 -0500 81)                     sets x reps
+00000000 (Not Committed Yet 2022-11-10 21:34:41 -0500 82)                 </h5>

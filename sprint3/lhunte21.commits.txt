@@ -1,0 +1,165 @@
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  54)      registerWithEmailAndPassword = 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  55)      async (firstName,lastName, username, email, password) => {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  56)         try {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  57)           const res = 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  58)           await createUserWithEmailAndPassword(auth, email, password);
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  59) 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  60)           console.log("Succesfully signed in")
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  61)           const user = res.user
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  62) 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  63)           await addDoc(collection(db, "users"), {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  64)             uid: user.uid,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  65)             firstName,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  66)             lastName,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  67)             username,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  68)             authProvider: "local",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  69)             email,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  70)           });
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  71)           
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  72)         } catch (err) {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  73)           console.error(err);
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  74)           alert(err.message);
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  75)         }
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  76)       };
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 149) 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500 150)         this.registerWithEmailAndPassword(this.state.firstName, this.state.lastName,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500 151)              this.state.username, this.state.email, this.state.password)
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500 152)         }
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500   7) import {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500   8)     GoogleAuthProvider,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500   9)      getAuth,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  10)      signInWithPopup,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  11)      signInWithEmailAndPassword,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  12)       createUserWithEmailAndPassword,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  13)       sendPasswordResetEmail,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  14)      signOut,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  15)     } from "firebase/auth";
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  16)     import {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  17)      getFirestore,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  18)      query,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  19)      getDocs,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  20)      collection,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  21)       where,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  22)       addDoc,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  23)     } from "firebase/firestore";
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  24) 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  25) const firebaseConfig = {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  26)     apiKey: "AIzaSyBpXW4PRvBgm_OdHZrNBan8hYvISW3qdOs",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  27)     authDomain: "gitfit-16360.firebaseapp.com",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  28)     projectId: "gitfit-16360",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  29)     storageBucket: "gitfit-16360.appspot.com",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  30)     messagingSenderId: "850707313995",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  31)     appId: "1:850707313995:web:2c4eea72090c04a700a4ce",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  32)     measurementId: "G-GL9EESM2YB"
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  33)   };
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  58)        // this.props.onSubmit(this.state)
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  59)        signInWithEmailAndPassword(auth, this.state.email, this.state.password)
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  60)        .then((userCredential) => {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  61)          // Signed in 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  62)          const user = userCredential.user;
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  63)          console.log(user.email, " signed in")
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  64)          // ...
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  65)        })
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  66)        .catch((error) => {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  67)          const errorCode = error.code;
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  68)          const errorMessage = error.message;
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  69)          alert("Incorrect username or passw
+ord")
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  70)          this.setState({
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  71)             email: "",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  72)             password: ""
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  73)         })
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  74)        });
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  75)     };
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500   6) import { initializeApp } from "firebase/app";
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500   7) import {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500   8)     GoogleAuthProvider,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500   9)      getAuth,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  10)      signInWithPopup,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  11)      signInWithEmailAndPassword,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  12)       createUserWithEmailAndPassword,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  13)       sendPasswordResetEmail,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  14)      signOut,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  15)     } from "firebase/auth";
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  16)     import {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  17)      getFirestore,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  18)      query,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  19)      getDocs,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  20)      collection,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  21)       where,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  22)       addDoc,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  23)     } from "firebase/firestore";
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  24) 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  25) const firebaseConfig = {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  26)     apiKey: "AIzaSyBpXW4PRvBgm_OdHZrNBan8hYvISW3qdOs",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  27)     authDomain: "gitfit-16360.firebaseapp.com",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  28)     projectId: "gitfit-16360",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  29)     storageBucket: "gitfit-16360.appspot.com",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  30)     messagingSenderId: "850707313995",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  31)     appId: "1:850707313995:web:2c4eea72090c04a700a4ce",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  32)     measurementId: "G-GL9EESM2YB"
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  33)   };
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  34) 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  35)   const app = initializeApp(firebaseConfig);
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  36) //const analytics = getAnalytics(app)
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  37) 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  38) const auth = getAuth();
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  39) const db = getFirestore(app);
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  40) 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  41) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  42) 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  47)     changePassword = async (email) => {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  48)             sendPasswordResetEmail(auth, email)
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  49)           .then(() => {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  50)             console.log("Email sent!")
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  51)             // Password reset email sent!
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  52)             // ..
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  53)           })
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  54)           .catch((error) => {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  55)             const errorCode = error.code;
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  56)             const errorMessage = error.message;
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  57)             alert("email not found")
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  58)             this.setState({
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  59)                 email: ""
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  60)             })
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  61)             // ..
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  62)           });
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  63)     }
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  73)         this.changePassword(this.state.email)
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500   6) import { initializeApp } from "firebase/app";
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500   7) import {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500   8)     GoogleAuthProvider,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500   9)      getAuth,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  10)      signInWithPopup,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  11)      signInWithEmailAndPassword,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  12)       createUserWithEmailAndPassword,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  13)       sendPasswordResetEmail,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  14)      signOut,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  15)     } from "firebase/auth";
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  16)     import {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  17)      getFirestore,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  18)      query,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  19)      getDocs,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  20)      collection,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  21)       where,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  22)       addDoc,
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  23)     } from "firebase/firestore";
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  24) 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  25) const firebaseConfig = {
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  26)     apiKey: "AIzaSyBpXW4PRvBgm_OdHZrNBan8hYvISW3qdOs",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  27)     authDomain: "gitfit-16360.firebaseapp.com",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  28)     projectId: "gitfit-16360",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  29)     storageBucket: "gitfit-16360.appspot.com",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  30)     messagingSenderId: "850707313995",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  31)     appId: "1:850707313995:web:2c4eea72090c04a700a4ce",
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  32)     measurementId: "G-GL9EESM2YB"
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  33)   };
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  34) 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  35)   const app = initializeApp(firebaseConfig);
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  36) //const analytics = getAnalytics(app)
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  37) 
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  38) const auth = getAuth();
+aa75d1f2 (Fort Hunter 2022-11-09 13:59:37 -0500  39) const db = getFirestore(app);
+
+I did not write that much code during this sprint.  I used most of my time
+configuring our firebase set up.

@@ -1,0 +1,80 @@
+src/components/tabs/TOOLS/water.js
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500  1) import React from 'react';
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500  2) import Box from '@mui/material/Box';
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500  3) import TextField from '@mui/material/TextField';
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500  4) import './TOOLS.css'
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500  5) 
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500  6) import InputAdornment from '@mui/material/InputAdornment';
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500  7) 
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500  8) export default class Water extends React.Component {
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500  9)       state = {
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 10)         weight: ""
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 11)       }
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 12) 
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 13)       change = (e) => {
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 14)               this.setState({
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 15)                               [e.target.name]: e.target.value
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 16)                               });
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 17)       };
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 18)       // resets state 
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 19)       onSubmit = e => {
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 20)               e.preventDefault();
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 21)               this.props.onSubmit(this.state)
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 22)                       this.setState({
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 23) weight: ""
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 24) })
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 25) };
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 26) 
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 27) render(){
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 28)       return(
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 29)               <tools className="tools">
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 30)                       <div className="tools-container-hr">
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 31)                               <h1>Water Intake calculator</h1>
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 32)                               <h2>How Much Water Should I Drink?</h2>
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 33)                               <Box  
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 34)                                       component="form"
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 35)                                       sx={{
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 36)                                               '& > :not(style)': { m: 2, width: '8ch' },
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 37)                                       }}
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 38)                                       noValidate
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 39)                                       autoComplete="off"
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 40)                               >
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 41)                                       {/* sets the state of the weight and height to the va>
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 42)                                       <TextField id="standard-basic" 
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 43)                                               name = "weight"
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 44)                                               label="Weight" 
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 45)                                               variant="outlined"
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 46)                                               color="success"
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 47)                                               value = {this.state.username}
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 48)                                               onChange = {e => this.change(e)}
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 49)                                               size = "small"
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 50)                                               InputProps={{
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 51)                                                       endAdornment: <InputAdornment positio>
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 52)                                               }}
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 53)                                               focused
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 54)                                       /> 
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 55)                                       <br />
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 56)                               </Box>   
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 57)                               <h2>Target Daily Water Intake: </h2>
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 58)                               <h1>{((this.state.weight)*.5).toFixed(0) } ounces - {((this.s>
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 59)                               <h4>Drinking this amount of water each day should be sufficie>
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 60)                               <br/>
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 61)                               
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 62)                               <br/>
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 63)                               
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 64)                       </div>
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 65)               </tools>
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 66)               )
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 67) }
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 68) }
+
+src/App.js
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 44)           <Route exact path="/water" element={<Water/>}/>
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 20) import Water from './components/tabs/TOOLS/water.js'
+
+src/components/MenuItems.js
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 26)     },
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 27)     {
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 28)       title: 'Water',
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 29)       path: '/water',
+d06784d1 (Shervin A Shirani 2022-11-17 13:50:34 -0500 30)       cName: 'dropdown-link'

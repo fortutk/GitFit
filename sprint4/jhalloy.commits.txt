@@ -1,0 +1,36 @@
+Jack/src/components/tabs/WORKOUTS/App1.js
+88eba31e Jack/src/components/tabs/WORKOUTS/App.js  (Julian Halloy 2022-11-29 21:36:39 -0500  1) import { useState, useEffect } from 'react'
+88eba31e Jack/src/components/tabs/WORKOUTS/App.js  (Julian Halloy 2022-11-29 21:36:39 -0500  9)   //localStorage.setItem("workoutarray", []);
+88eba31e Jack/src/components/tabs/WORKOUTS/App.js  (Julian Halloy 2022-11-29 21:36:39 -0500 10)   const [workoutarray, setWorkouts] = useState([]);
+88eba31e Jack/src/components/tabs/WORKOUTS/App.js  (Julian Halloy 2022-11-29 21:36:39 -0500 11)   // on first render, update workoutarray from local storage
+88eba31e Jack/src/components/tabs/WORKOUTS/App.js  (Julian Halloy 2022-11-29 21:36:39 -0500 12)   useEffect(() => {
+88eba31e Jack/src/components/tabs/WORKOUTS/App.js  (Julian Halloy 2022-11-29 21:36:39 -0500 13)     // only update array if stored array exists
+88eba31e Jack/src/components/tabs/WORKOUTS/App.js  (Julian Halloy 2022-11-29 21:36:39 -0500 14)     if (localStorage.getItem("workoutarray") != null) {
+88eba31e Jack/src/components/tabs/WORKOUTS/App.js  (Julian Halloy 2022-11-29 21:36:39 -0500 15)       setWorkouts(JSON.parse(localStorage.getItem("workoutarray")));
+88eba31e Jack/src/components/tabs/WORKOUTS/App.js  (Julian Halloy 2022-11-29 21:36:39 -0500 16)      }
+88eba31e Jack/src/components/tabs/WORKOUTS/App.js  (Julian Halloy 2022-11-29 21:36:39 -0500 17)   }, [])
+88eba31e Jack/src/components/tabs/WORKOUTS/App.js  (Julian Halloy 2022-11-29 21:36:39 -0500 18) 
+
+Jack/src/components/tabs/WORKOUTS/Workout.js
+88eba31e (Julian Halloy 2022-11-29 21:36:39 -0500  7)         // create a variable without the deleted element
+88eba31e (Julian Halloy 2022-11-29 21:36:39 -0500  8)         let updatedarray = workoutarray.filter((w) => w !== workout);
+88eba31e (Julian Halloy 2022-11-29 21:36:39 -0500 10)         // store the updated array into localStorage for persistence
+88eba31e (Julian Halloy 2022-11-29 21:36:39 -0500 11)         localStorage.setItem("workoutarray", JSON.stringify(updatedarray));
+
+Jack/src/components/tabs/WORKOUTS/WorkoutForm.js
+88eba31e (Julian Halloy 2022-11-29 21:36:39 -0500  15) export default function WorkoutForm({ workoutarray, setWorkouts }) {  
+88eba31e (Julian Halloy 2022-11-29 21:36:39 -0500  70)     // reset states back to default
+88eba31e (Julian Halloy 2022-11-29 21:36:39 -0500  72)     // save workouts to localStorage
+88eba31e (Julian Halloy 2022-11-29 21:36:39 -0500  73)     localStorage.setItem("workoutarray", JSON.stringify([...workoutarray, newelement]));
+
+README.md
+5e2e6fbe (Julian Halloy 2022-11-30 19:52:28 -0500  4) GitFit is an easy-to-use web application for all your workout needs, including workout recommendations, workout tracking, and more. Users can find the right workouts to achieve their goals, and stay consistent by logging their progress. The web app also provides a wide variety of tools such as a body mass index (BMI) calculator, daily protein and calorie recommendations, heart rate calculator, 1 rep max calculator, and water intake needs.
+5e2e6fbe (Julian Halloy 2022-11-30 19:52:28 -0500 21) `cd` into the directory containing the web application. GitFit is contained within the `Jack` directory.
+5e2e6fbe (Julian Halloy 2022-11-30 19:52:28 -0500 22) 
+5e2e6fbe (Julian Halloy 2022-11-30 19:52:28 -0500 23) `npm install` will install the package requirements specified in `package.json`.
+5e2e6fbe (Julian Halloy 2022-11-30 19:52:28 -0500 27) Open [http://localhost:3000](http://localhost:3000) to view it in the browser. If you are running the web app on hydra, vscode will automatically port forward port 3000 for use, so the link will still work. If you are using `ssh`, you will need to find a way to port forward.
+5e2e6fbe (Julian Halloy 2022-11-30 19:52:28 -0500 28) 
+5e2e6fbe (Julian Halloy 2022-11-30 19:52:28 -0500 29) `npm run build` builds the app for productions to the `build` directory (unnecessary).
+5e2e6fbe (Julian Halloy 2022-11-30 19:52:28 -0500 30) 
+5e2e6fbe (Julian Halloy 2022-11-30 19:52:28 -0500 31) #### How to Use GitFit
+4dea78d9 (Julian Halloy 2022-11-30 20:01:20 -0500 32) The first page the user is prompted with is the login page. Once the user creates an account and logs in, they can utilize all of the tools GitFits offers. The homepage has several tabs at the top of it which is how you can access each tool. The workouts tab contains the workout tracker, where the user can log workouts. The goals page provides a workout plan based on the user's needs. The tools drop-down menu contains everything the user needs for food and water intake, as well as some other useful calculators.

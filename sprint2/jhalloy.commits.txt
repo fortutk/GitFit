@@ -1,0 +1,184 @@
+Julian/src/App.js
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  3) import WorkoutForm from './components/WorkoutForm.js'
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400  4) import './index.css'
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  7)   const [workoutarray, setWorkouts] = useState([
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 33)       <div className="Workout-header">
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 34)         <h1 className="Workout-header-title">Workout Tracker</h1>
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 35)         <WorkoutForm workoutarray={workoutarray} setWorkouts={setWorkouts} />
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 36)       </div>
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400 37)       <Workouts workouts={workoutarray} />
+
+Julian/src/components/WorkoutForm.js
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400   1) import * as React from 'react';
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400   2) import { useState } from 'react';
+de3ed58b (Julian Halloy 2022-10-26 18:51:22 -0400   3) import { format, parse } from 'date-fns'
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400   4) import Button from '@mui/material/Button';
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400   5) import TextField from '@mui/material/TextField';
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400   6) import Dialog from '@mui/material/Dialog';
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400   7) import DialogActions from '@mui/material/DialogActions';
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400   8) import DialogContent from '@mui/material/DialogContent';
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400   9) import DialogContentText from '@mui/material/DialogContentText';
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  10) import DialogTitle from '@mui/material/DialogTitle';
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  11) 
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  12) // popup form for inputting the data in a new workout
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  13) export default function WorkoutForm({ workoutarray, setWorkouts }) {
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  14)   const [open, setOpen] = React.useState(false);
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  15)   //open popup form
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  16)   const handleClickOpen = () => {
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  17)     setOpen(true);
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  18)   };
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  19)   // function called on cancel
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  20)   const handleClose = () => {
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  21)     setOpen(false);
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  22)   };
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  23) 
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  24)   // states to store new workout data in form
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  25)   const [text, setText] = useState('');
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  26)   const [date, setDate] = useState(null);
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  27)   const [weight, setWeight] = useState(0);
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  28)   const [reps, setReps] = useState(0);
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  29)   const [sets, setSets] = useState(0);
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  30) 
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  31)   // function to reset states back to start values
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  32)   const resetStates = () => {
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  33)     setText('');
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  34)     setDate(null);
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  35)     setWeight(0);
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  36)     setReps(0);
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  37)     setSets(0);
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  38)   }
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  39) 
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  40)   // function called on add
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  41)   const newWorkout = () => {
+de3ed58b (Julian Halloy 2022-10-26 18:51:22 -0400  42)     // parse the date to convert from yyyy-MM-dd to MM/dd/yyyy
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  43)     let parseddate = 'N/A';
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  44)     if (date != null) {
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  45)       parseddate = parse(date, 'yyyy-MM-dd', new Date());
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  46)       parseddate = format(parseddate, 'MM/dd/yyyy');
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  47)     }
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  48)     // add workout to list here
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  49)     const newelement = {
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  50)       text: text,
+de3ed58b (Julian Halloy 2022-10-26 18:51:22 -0400  51)       date: parseddate,
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  52)       weight: weight,
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  53)       reps: reps,
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  54)       sets: sets
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  55)     }
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  56) 
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  57)     setOpen(false);
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  58)     // append workout to workouts state array
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  59)     setWorkouts(previousState => [...previousState, newelement]);
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  60)     // save workouts to localStorage
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  61)     localStorage.setItem("workoutarray", JSON.stringify(workoutarray));
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  62)     // reset states
+c7ee9e6b (Julian Halloy 2022-10-26 19:43:10 -0400  63)     resetStates();
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  64)   };
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  65) 
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  66)   return (
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  67)     <div>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  68)       <Button variant="outlined" onClick={handleClickOpen}>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  69)         Add a Workout
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  70)       </Button>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  71)       <Dialog open={open} onClose={handleClose}>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  72)         <DialogTitle>New Workout</DialogTitle>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  73)         <DialogContent>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  74)           <DialogContentText>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  75)             Please enter information on your workout.
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  76)           </DialogContentText>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  77)           {/* Workout inputs - could change workout name to be a select instead of text box */}
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  78)           <TextField
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  79)             autoFocus
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  80)             onChange={(e) => setText(e.target.value)}
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  81)             margin="dense"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  82)             id="name"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  83)             label="Workout name"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  84)             type="text"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  85)             fullWidth
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  86)             variant="standard"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  87)           />
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  88)           <TextField
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  89)             autoFocus
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  90)             onChange={(e) => setDate(e.target.value)}
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  91)             margin="dense"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  92)             id="date"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  93)             label="Date"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  94)             type="date"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  95)             fullWidth
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  96)             variant="standard"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  97)           />
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  98)           <TextField
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400  99)             autoFocus
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400 100)             onChange={(e) => setWeight(e.target.value)}
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 101)             margin="dense"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 102)             id="weight"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 103)             label="Weight (lbs)"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 104)             type="number"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 105)             fullWidth
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 106)             variant="standard"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 107)           />
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 108)           <TextField
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 109)             autoFocus
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400 110)             onChange={(e) => setReps(e.target.value)}
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 111)             margin="dense"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 112)             id="reps"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 113)             label="Reps per set"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 114)             type="number"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 115)             fullWidth
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 116)             variant="standard"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 117)           />
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 118)           <TextField
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 119)             autoFocus
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400 120)             onChange={(e) => setSets(e.target.value)}
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 121)             margin="dense"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 122)             id="sets"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 123)             label="Sets"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 124)             type="number"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 125)             fullWidth
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 126)             variant="standard"
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 127)           />
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 128)         </DialogContent>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 129)         <DialogActions>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 130)           <Button onClick={handleClose}>Cancel</Button>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 131)           <Button onClick={newWorkout}>Add</Button>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 132)         </DialogActions>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 133)       </Dialog>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 134)     </div>
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 135)   );
+9179f79e (Julian Halloy 2022-10-24 21:38:17 -0400 136) }
+
+Julian/src/components/Workout.js
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  5)             <h5>Date: {workout.date}</h5>
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 13) export default Workout
+
+Julian/src/components/Workouts.js
+9b1b5056 (Julian Halloy 2022-10-25 22:08:46 -0400  6)             {workouts.map((workout, index) => (
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400  7)                 <Workout key={index} workout={workout} />
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 13) export default Workouts
+
+Julian/src/index.css
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 17)   margin: 15px;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 18)   border-radius: 4px;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 20)   color: #282c34;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 21)   background-color: rgb(2,146,53, 50%);
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 27) }
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 28) 
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 29) .workout h5 {
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 30)   display: flex;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 31)   justify-content: space-between;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 32)   margin:10px;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 33) }
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 34) 
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 35) .Workout-header {
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 36)   background-color: #282c34;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 37)   display: flex;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 38)   flex-direction: row;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 39)   align-items: center;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 40)   justify-content: left;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 41)   color: white;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 42) }
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 43) 
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 44) .Workout-header-title {
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 45)   font-size: calc(10px + 2vmin);
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 46)   margin: 10px;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 47)   margin-left: 2.5vw;
+2dc36c3e (Julian Halloy 2022-10-26 20:42:31 -0400 48)   margin-right: 70vw;

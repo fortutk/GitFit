@@ -1,0 +1,125 @@
+Julian/src/App.js
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  9)       cardio: false,
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 18)       cardio: false,
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 26)       cardio: false,
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500 40)       <Workouts workouts={workoutarray} workoutarray={workoutarray} setWorkouts={setWorkouts}/>
+
+Julian/src/components/WorkoutForm.js
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  30)   const [time, setTime] = useState(0);
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  31)   const [cardio, setCardio] = useState(false);
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  32)   const [distance, setDistance] = useState(0);
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  41)     setTime(0);
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  42)     setDistance(0);
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  55)       cardio: cardio,
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  60)       sets: sets,
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  61)       time: time,
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  62)       distance: distance
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500  74)   // workout options
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500  75)   const workoutoptions = [
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500  76)     "",
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500  77)     "Bench press",
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500  78)     "Squat",
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500  79)     "Bicep curl",
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500  80)     "Deadlift",
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500  81)     "Bent-over row",
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500  82)     "Shoulder press"
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500  83)   ]
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  84) 
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  85)   // cardio options
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  86)   const cardiooptions = [
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  87)     "",
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  88)     "Running",
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  89)     "Swimming",
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  90)     "Rowing",
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  91)     "Cycling"
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  92)   ]
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  93) 
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  94)   // set text when drop down menu value is changed and cardio bool
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500  95)   const mhandleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500  96)     setText(event.target.value);
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  97)     if (cardiooptions.includes(event.target.value)) setCardio(true);
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500  98)     else setCardio(false);
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500  99)   };
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 100)   
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 113)             id="workout-text"
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 114)             select
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 115)             label="Workout Select"
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 116)             value={text}
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 117)             onChange={mhandleChange}
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 118)             SelectProps={{
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 119)               native: true,
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 120)             }}
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 121)             helperText="Please select your workout"
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 122)             variant="filled"
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 123)           >
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 124)             {workoutoptions.map((option) => (
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 125)               <option key={option} value={option}>
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 126)                 {option}
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 127)               </option>
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 128)             ))}
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 129)             {cardiooptions.map((option) => (
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 130)               <option key={option} value={option}>
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 131)                 {option}
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 132)               </option>
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 133)             ))}
+686614fe (Julian Halloy 2022-11-09 20:07:15 -0500 134)           </TextField>
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 145)           {!cardio && <TextField
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 154)           />}
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 155)           {!cardio && <TextField
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 164)           />}
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 165)           {cardio && <TextField
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 166)             autoFocus
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 167)             onChange={(e) => setTime(e.target.value)}
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 168)             margin="dense"
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 169)             id="time"
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 170)             label="Time"
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 171)             type="number"
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 172)             fullWidth
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 173)             variant="standard"
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 174)           />}
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 175)           {cardio && <TextField
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 176)             autoFocus
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 177)             onChange={(e) => setDistance(e.target.value)}
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 178)             margin="dense"
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 179)             id="distance"
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 180)             label="Distance"
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 181)             type="number"
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 182)             fullWidth
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 183)             variant="standard"
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 184)           />}
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 185)           {!cardio && <TextField
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 194)           />}
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 203) }
+
+Julian/src/components/Workout.js
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500  1) import Button from '@mui/material/Button';
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500  2) import DeleteIcon from '@mui/icons-material/Delete';
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500  3) 
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500  4) const Workout = ({ workout, workoutarray, setWorkouts }) => {
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500  5)     const deleteWorkout = (index) => {
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500  6)         setWorkouts((current)=> current.filter((w) => w !== workout));
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500  7)     }
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500  8)     
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500  9)     
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 12)             <div className="individual-header"><h3>{workout.text}</h3><Button onClick={deleteWorkout} variant="outlined" size="small" color="error"><DeleteIcon /></Button></div>
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 14)             {!workout.cardio && <h5>Reps per set: {workout.reps}</h5>}
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 15)             {!workout.cardio && <h5>Sets: {workout.sets}</h5>}
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 16)             {!workout.cardio && <h5>Weight: {workout.weight}lbs</h5>}
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 17)             {workout.cardio && <h5>Time: {workout.time}</h5> }
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 18)             {workout.cardio && <h5>Distance: {workout.distance}</h5> }
+959a0cba (Julian Halloy 2022-11-09 20:50:14 -0500 19) 
+
+Julian/src/components/Workouts.js
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500  3) const Workouts = ({ workouts, workoutarray, setWorkouts }) => {
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500  7)                 <Workout key={index} workout={workout} workoutarray={workoutarray} setWorkouts={setWorkouts} />
+
+Julian/src/index.css
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500 27)   padding-right: 100px;
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500 36) .individual-header {
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500 37)   display: flex;
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500 38)   justify-content: space-between;
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500 39) }
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500 40) 
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500 46)   justify-content: space-between;
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500 50) 
+5818fd98 (Julian Halloy 2022-11-09 16:02:37 -0500 53)   margin:10px;

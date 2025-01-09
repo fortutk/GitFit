@@ -1,0 +1,149 @@
+protein.js
+
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500   1) import React from 'react';
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500   2) import Box from '@mui/material/Box';
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500   3) import TextField from '@mui/material/TextField';
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500   4) 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500   5) 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500   6) export default class Protein extends React.Component {
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500   7)      state = {
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500   8) weight: "",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500   9)              height: ""
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  10)      }
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  11) 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  12)      change = (e) => {
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  13)              this.setState({
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  14)                              [e.target.name]: e.target.value
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  15)                              });
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  16)      };
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  17)      // resets state 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  18)      onSubmit = e => {
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  19)              e.preventDefault();
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  20)              this.props.onSubmit(this.state)
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  21)                      this.setState({
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  22) weight: "",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  23) height: ""
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  24) })
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  25) };
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  26) 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  27) render(){
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  28)      return(
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  29)                      
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  30)              <body style ={{
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  31)                      color: "#000000",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  32)                      backgroundImage: "url(/workout.jpg)",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  33)                      backgroundRepeat: "noRepeat",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  34)                      backgroundAttachment: "fixed",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  35)                      backgroundSize: "100%"
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  36)              }}>
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  37)      
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  38) 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  39)                      <form style ={{
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  40)                      display: "center", 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  41)                      textAlign: "center",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  42)                      marginLeft: "auto",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  43)                      marginRight: "auto"}}>
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  44)                      <h1 style={{color: "#1976d2",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  45)                      fontFamily: "Georgia",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  46)                      fontWeight: 400,
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  47)                      fontSize: "1 em",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  48)                      lineHeight: "1.4375 em",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  49)                      letterSpacing: "0.00938 em",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  50)                      padding: 0}}>Protein Calculation</h1>
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  51)                      <h2 style={{color: "#00000099",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  52)                      fontFamily: "Arial",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  53)                      fontWeight: 400,
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  54)                      fontSize: "1 em",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  55)                      lineHeight: "1.4375 em",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  56)                      letterSpacing: "0.00938 em",
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  57)                      padding: 0}} >Enter your weight to calculate the amount of protein you need </h2>
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  58) 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  59)                      <Box  
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  60)                      component="form"
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  61)                      sx={{
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  62)                              '& > :not(style)': { m: 2, width: '25ch' },
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  63)                      }}
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  64)      noValidate
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  65)              autoComplete="off"
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  66)              >
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  67) 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  68)              {/* sets the state of the weight and height to the value of the input */}
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  69)      <TextField id="standard-basic" 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  70)              name = "weight"
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  71)              label="Weight (lbs)" 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  72)              variant="standard"
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  73)              value = {this.state.username}
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  74)      onChange = {e => this.change(e)}
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  75)      size = "small"
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  76)      
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  77)              /> 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  78)              </Box>   
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  79) 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  80)              <h1>The minimum number of protein you need is: </h1> 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  81) 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  82)              {/* calculates the BMI */}
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  83)      <p>{this.state.weight * .36}</p>
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  84) 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  85)      {/* prints the categories for BMI */}
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  86)      <h2>Where does protein come from: </h2>
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  87)              
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  88)              <h4>The healthiest protein options are plant sources, such as soy, nuts, seeds, beans and lentils; lean me>
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  89)              white-meat chicken or turkey; a variety of fish or seafood; egg whites; or low-fat dairy.
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  90) 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  91) Meet your dietary protein needs with these whole foods versus supplements, which are no more effective than food as lon>
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  92) 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  93) </h4>
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  94) 
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  95)              <br/>
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  96)              </form>
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  97)              </body>
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  98)              )
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  99) }
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500 100) }
+
+App.js
+
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  1) // import React, { Component } from 'react';
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  2) import './App.css';
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  3) import BMI from './bmi.js'
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  4) import Calorie from './calorie.js'
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400  5) import Rep from './maxrep.js'
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400  6) import Rate from './heart_rate.js'
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500  7) import Protein from './protein.js'
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  8) // import Background from './background.js'
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  9) import {
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 10)   BrowserRouter as Router,
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 11)   Routes,
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 12)   Route,
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 13) } from "react-router-dom";
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 14) 
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 15) export default function App() {
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 16)   return(
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 17)     <Router>
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 18)        <div>
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 19)       <Routes>
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 20) 
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 21)         <Route path = "/bmi" element={<BMI />} />
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 22)         <Route path = "/calorie" element={<Calorie />} />
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 23)         <Route path = "/rep" element={<Rep/>} />
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 24)         <Route path = "/rate" element={<Rate />} />
+7091f1f8 (Shervin A Shirani 2022-11-08 17:10:01 -0500 25)         <Route path = "/protein" element={<Protein/>} />
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 26)       </Routes>
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 27)       </div>
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 28)     </Router>
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500 29)   )
+a0543229 (Shervin A Shirani 2022-11-08 17:12:10 -0500 30) }
+
+bmi.js
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  29)                      
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  30)              <body style ={{
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  31)                      color: "#000000",
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  32)                      backgroundImage: "url(/workout.jpg)",
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  33)                      backgroundRepeat: "noRepeat",
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  34)                      backgroundAttachment: "fixed",
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  35)                      backgroundSize: "100%"
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  36)              }}>
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  37)      
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  38) 
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  39)                      <form style ={{
+3b4b7c5f (Shervin A Shirani 2022-11-08 15:15:57 -0500  40)                      display: "center", 

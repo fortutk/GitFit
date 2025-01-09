@@ -1,0 +1,128 @@
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 14)   function LogIn(){
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 15)     return(
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 16)       <Login />
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 17)     )
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 18)   }
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 19) 
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 20)   function Signup(){
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 21)     return(
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 22)       <SignUp/>
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 23)     )
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 24)   } 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 25) 
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 26)   function Forgotp(){
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 27)     return(
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 28)       <ForgotP/>
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 29)     )
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 30)   }
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 31) 
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 32) export default function App() {
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 33)   return(
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 34)     <Router>
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 35)        <div>
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 36)       <Routes>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 37) 
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 38)         <Route path = "/login" element={<LogIn />} />
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 39)         <Route path = "/signup" element={<Signup />} />
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 40)         <Route path = "/forgotpassword" element={<Forgotp/>} />
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 41)       </Routes>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 42)       </div>
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 43)     </Router>
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 44)   )
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 45) 
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 46) 
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 47)   
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 48) }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400   7) import { initializeApp } from "firebase/app";
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400   8) import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400   9) //import { getAnalytics } from "firebase/analytics";
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  11) //Firebase info
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  12) const firebaseConfig = {
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  13)   apiKey: "AIzaSyBpXW4PRvBgm_OdHZrNBan8hYvISW3qdOs",
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  14)   authDomain: "gitfit-16360.firebaseapp.com",
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  15)   projectId: "gitfit-16360",
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  16)   storageBucket: "gitfit-16360.appspot.com",
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  17)   messagingSenderId: "850707313995",
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  18)   appId: "1:850707313995:web:2c4eea72090c04a700a4ce",
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  19)   measurementId: "G-GL9EESM2YB"
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  20) };
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  21) 
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  22) // Initialize Firebase
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  23) const app = initializeApp(firebaseConfig);
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  24) //const analytics = getAnalytics(app)
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  25) 
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  26) const auth = getAuth();
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  27) 
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  51)     checkFirstName = () => {
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  52)         if(this.state.firstName.length < 1){
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  53)           alert("Please enter a first name"
+);
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  54)           return false
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  55)         }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  56)     }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  57)     checkLastName = () => {
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  58)         if(this.state.lastName.length < 1){
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  59)           alert("Please enter a last name");
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  60)           return false
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  61)         }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  62)     }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  63) 
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  64)     checkUsername = () => {
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  65)         if(this.state.username.length < 3){
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  66)           alert("username must be at least 3 characters long");
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  67)           return false
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  68)         }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  69)         return true;
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  70)     }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  71)     checkPassword = () => {
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  72)         if(this.state.password.length < 8){
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  73)           alert("Password must be at least 8 characters long");
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  74)           return false
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  75)         }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  76)         return true;
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  77)     }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  78)     checkEmail = () => {
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  79)         if(this.state.email.indexOf("@") === -1){
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  80)             alert("Invalid email")
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  81)             return false;
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  82)         }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  83)         return true;
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  84)     }
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  85) 
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  88)         if(this.checkFirstName() == false){
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  89)             this.clear()
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  90)             return
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  91)         }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  92)         if(this.checkLastName() == false){
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  93)             this.clear()
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  94)             return 
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  95)         }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  96)         if(this.checkUsername() == false){
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  97)             this.clear()
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  98)             return
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400  99)         }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 100)         if(this.checkEmail() == false){
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 101)             this.clear()
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 102)             return
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 103)         }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 104)         if(this.checkPassword() == false){
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 105)             this.clear()
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 106)             return
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 107)         }
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 109)         createUserWithEmailAndPassword(auth, this.email, this.password)
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 110)         .then((userCredential) => {
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 111)             // Signed in 
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 112)             const user = userCredential.user;
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 113)             console.log("hello")
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 114)             // ...
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 115)           })
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 116)           .catch((error) => {
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 117)             console.log("error")
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 118)             const errorCode = error.code;
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 119)             const errorMessage = error.message;
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 120)             // ..
+669dc2b5 (Fort Hunter 2022-10-27 14:36:16 -0400 121)           });
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 192)                  name = "email"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 193)                 label="Email" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 194)                 variant="standard"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 195)                value = {this.state.email}

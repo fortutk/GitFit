@@ -1,0 +1,339 @@
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  1) import * as React from 'react';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  2) import Box from '@mui/material/Box';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  3) import TextField from '@mui/material/TextField';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  4) import Button from '@mui/material/Button';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  5) import {BrowserRouter as Router, Link} from 'react-router-dom';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  6) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  7) export default class forgotP extends React.C
+omponent {
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  8)     state = {
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  9)         email: ""
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 10)     }
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 11) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 12)     change = (e) => {
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 13)         this.setState({
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 14)             [e.target.name]: e.target.value
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 15)         });
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 16)     };
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 17) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 18)     onSubmit = e => {
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 19)         e.preventDefault();
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 20)         this.props.onSubmit(this.state)
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 21)         this.setState({
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 22)             email: ""
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 23)         })
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 24)     };
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 25) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 26) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 27)     render(){
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 28)         return(
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 29)             <form style ={{display: "block",
+ 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 30)             textAlign: "center",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 31)             marginLeft: "auto",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 32)             marginRight: "auto"}}>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 33)                 <h1 style={{color: "#1976d2"
+,
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 34)     fontFamily: "Arial",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 35)     fontWeight: 400,
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 36)     fontSize: "1 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 37)     lineHeight: "1.4375 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 38)     letterSpacing: "0.00938 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 39)     padding: 0}}>Forgot password?</h1>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 40)                 <h2 style={{color: "#0000009
+9",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 41)     fontFamily: "Arial",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 42)     fontWeight: 400,
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 43)     fontSize: "1 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 44)     lineHeight: "1.4375 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 45)     letterSpacing: "0.00938 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 46)     padding: 0}} >Enter your email and we wi
+ll send you your password</h2>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 47)                  <Box  
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 48)                 component="form"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 49)                 sx={{
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 50)                   '& > :not(style)': { m: 2,
+ width: '25ch' },
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 51)                 }}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 52)                 noValidate
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 53)                 autoComplete="off"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 54)               >
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 55) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 56)                  <TextField id="standard-basic" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 57)                  name = "email"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 58)                 label="Email" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 59)                 variant="standard"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 60)                value = {this.state.email}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 61)                 onChange = {e => this.change
+(e)}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 62)                 size = "small"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 63)                  /> 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 64)                  <br />
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 65)                  </Box>   
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 66)                 <Button variant = "contained
+" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 67)                 onClick ={(e) => this.onSubm
+it(e)}>Submit</Button>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 68) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 69)                 <br/>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 70) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 71)             </form>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 72)         )
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 73)     }
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 74) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 75) }
+
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400   1) import * as React from 'react';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400   2) import Box from '@mui/material/Box';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400   3) import TextField from '@mui/material/TextField';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400   4) import Button from '@mui/material/Button';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400   5) import login from './login'
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400   6) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400   7) export default class signUp extends React.Component {
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400   8)     state = {
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400   9)         firstName: "",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  10)         lastName: "",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  11)         username: "",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  12)         email: "",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  13)         password: ""
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  14)     }
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  15) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  16)     change = (e) => {
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  17)         this.setState({
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  18)             [e.target.name]: e.target.value
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  19)         });
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  20)     };
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  21) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  22)     onSubmit = e => {
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  23)         e.preventDefault();
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  24)         this.props.onSubmit(this.state)
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  25)         this.setState({
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  26)             firstName: "",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  27)             lastName: "",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  28)             username: "",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  29)             email: "",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  30)             password: ""
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  31)         })
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  32)     };
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  33) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  34) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  35)     render(){
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  36)         return(
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  37)             <form style ={{display: "block", 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  38)             textAlign: "center",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  39)             marginLeft: "auto",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  40)             marginRight: "auto"}}>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  41)                 <h1 style={{color: "#1976d2",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  42)     fontFamily: "Arial",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  43)     fontWeight: 400,
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  44)     fontSize: "1 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  45)     lineHeight: "1.4375 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  46)     letterSpacing: "0.00938 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  47)     padding: 0}}>New to GitFit?</h1>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  48)                 <h2 style={{color: "#00000099",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  49)     fontFamily: "Arial",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  50)     fontWeight: 400,
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  51)     fontSize: "1 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  52)     lineHeight: "1.4375 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  53)     letterSpacing: "0.00938 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  54)     padding: 0}} >Sign up here</h2>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  55)                  <Box  
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  56)                 component="form"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  57)                 sx={{
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  58)                   '& > :not(style)': { m: 2, width: '25ch' },
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  59)                 }}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  60)                 noValidate
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  61)                 autoComplete="off"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  62)               >
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  63)                  <TextField id="standard-basic" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  64)                  name = "firstName"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  65)                 label="First Name" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  66)                 variant="standard"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  67)                value = {this.state.firstName}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  68)                 onChange = {e => this.change(e)}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  69)                 size = "small"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  70)                  /> 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  71)                  <br />
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  72) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  73)                  <TextField id="standard-basic" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  74)                  name = "lastName"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  75)                 label="Last Name" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  76)                 variant="standard"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  77)                value = {this.state.lastName}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  78)                 onChange = {e => this.change(e)}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  79)                 size = "small"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  80)                  /> 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  81)                  <br />
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  82) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  83)                  <TextField id="standard-ba
+sic" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  84)                  name = "username"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  85)                 label="Username" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  86)                 variant="standard"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  87)                value = {this.state.username}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  88)                 onChange = {e => this.change(e)}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  89)                 size = "small"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  90)                  /> 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  91)                  <br />
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  92) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  93)                  <TextField id="standard-basic" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  94)                  name = "email"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  95)                 label="Email" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  96)                 variant="standard"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  97)                value = {this.state.email}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  98)                 onChange = {e => this.change(e)}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  99)                 size = "small"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 100)                 />
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 101)                 <br />
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 102) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 103)                 <TextField id="standard-basic" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 104)                  name = "password"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 105)                  type = "password"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 106)                 label="Password" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 107)                 variant="standard"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 108)                value = {this.state.password}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 109)                 onChange = {e => this.change(e)}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 110)                 size = "small"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 111)                  /> 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 112)                  </Box>   
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 113)                 <Button variant = "contained" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 114)                 onClick ={(e) => this.onSubmit(e)}>Submit</Button>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 115)             </form>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 116)         )
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 117)     }
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 118) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 119) }
+
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  1) import * as React from 'react';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  2) import Box from '@mui/material/Box';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  3) import TextField from '@mui/material/TextField';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  4) import Button from '@mui/material/Button';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  5) import {BrowserRouter as Router, Link} from 'react-router-dom';
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  6) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  7) export default class Login extends React.Com
+ponent {
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  8)     state = {
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400  9)         username: "",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 10)         password: ""
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 11)     }
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 12) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 13)     change = (e) => {
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 14)         this.setState({
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 15)             [e.target.name]: e.target.value
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 16)         });
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 17)     };
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 18) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 19)     onSubmit = e => {
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 20)         e.preventDefault();
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 21)         this.props.onSubmit(this.state)
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 22)         this.setState({
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 23)             username: "",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 24)             password: ""
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 25)         })
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 26)     };
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 27) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 28) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 29)     render(){
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 30)         return(
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 31)             <form style ={{display: "block", 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 32)             textAlign: "center",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 33)             marginLeft: "auto",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 34)             marginRight: "auto"}}>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 35)                 <h1 style={{color: "#1976d2"
+,
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 36)     fontFamily: "Arial",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 37)     fontWeight: 400,
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 38)     fontSize: "1 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 39)     lineHeight: "1.4375 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 40)     letterSpacing: "0.00938 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 41)     padding: 0}}>Welcome to GitFit</h1>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 42)                 <h2 style={{color: "#00000099",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 43)     fontFamily: "Arial",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 44)     fontWeight: 400,
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 45)     fontSize: "1 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 46)     lineHeight: "1.4375 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 47)     letterSpacing: "0.00938 em",
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 48)     padding: 0}} >Sign in here</h2>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 49)                  <Box  
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 50)                 component="form"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 51)                 sx={{
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 52)                   '& > :not(style)': { m: 2, width: '25ch' },
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 53)                 }}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 54)                 noValidate
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 55)                 autoComplete="off"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 56)               >
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 57) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 58)                  <TextField id="standard-basic" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 59)                  name = "username"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 60)                 label="Username" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 61)                 variant="standard"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 62)                value = {this.state.username}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 63)                 onChange = {e => this.change(e)}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 64)                 size = "small"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 65)                  /> 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 66)                  <br />
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 67) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 68)                 <TextField id="standard-basic" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 69)                  name = "password"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 70)                  type = "password"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 71)                 label="Password" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 72)                 variant="standard"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 73)                value = {this.state.password}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 74)                 onChange = {e => this.change
+(e)}
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 75)                 size = "small"
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 76)                  /> 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 77)                  </Box>   
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 78)                 <Button variant = "contained" 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 79)                 onClick ={(e) => this.onSubmit(e)}>Submit</Button>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 80) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 81)                 <br/>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 82) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 83)             </form>
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 84)         )
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 85)     }
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 86) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 87) }
+
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400  1) import React, { Component } from 'react';
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400  2) import SignUp from './signUp';
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400  3) import Login from './login'
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400  4) import ForgotP from './forgotP'
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400  5) import ReactDOM from 'react-dom';
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400  6) import {
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400  7)     BrowserRouter as Router,
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400  8)     Switch,
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400  9)     Route,
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 10)     Redirect,
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 11)   } from "react-router-dom";
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 12) 
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 13) 
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 14) class App extends Component {
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 15) 
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 16)     state = {
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 17)         fields:{}
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 18)     };
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 19) 
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 20)     onSubmit = fields => {
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 21)         this.setState({ fields });
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 22)     };
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 23) 
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 24)   render() {
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 25)     return (
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 26)       <div className="App">
+00000000 (Not Committed Yet 2022-10-13 09:12:44 -0400 27)         <Login onSubmit={fields => this.onSubmit(fields)}/>
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 28)         <p>{JSON.stringify(this.state.fields, null, 2)}</p>
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 29)       </div>
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 30)     )
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 31)   }
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 32) }
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 33) 
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 34) //export default () => <routes />
+023e67ca (Fort Hunter       2022-10-11 13:33:34 -0400 35) export default App
+
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 1) import React from 'react'
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 2) import ReactDOM from 'react-dom'
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 3) import App from './App'
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 4) //import './index.css'
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 5) 
+023e67ca (Fort Hunter 2022-10-11 13:33:34 -0400 6) ReactDOM.render(<App />, document.getElementById('root')

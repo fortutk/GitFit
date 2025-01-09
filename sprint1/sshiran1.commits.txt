@@ -1,0 +1,267 @@
+App.js
+
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  1) import React, { Component } from 'react';
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  2) import './App.css';
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  3) import BMI from './bmi.js'
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  4) import Calorie from './calorie.js'
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  5) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  6) class App extends Component {
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  7) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  8)   state = {
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  9)       fields:{}
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 10)   };
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 11) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 12)   onSubmit = fields => {
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 13)       this.setState({ fields });
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 14)   };
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 15) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 16) render() {
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 17)   
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 18)   return (
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 19)     <div className="App">
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 20)       <BMI onSubmit={fields => this.onSubmit(fields)}/>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 21)       <br /> <br /> <br /><br />
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 22)       <h2>------------------------------------------------------------------------------------------------->
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 23)       <br /> <br /> <br /><br />
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 24)       <Calorie onSubmit={fields => this.onSubmit(fields)}/>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 25)     </div>
+7e679326 (Shervin A Shirani 2022-10-12 22:59:42 -0400 26)   
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 27)   )
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 28) }
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 29) }
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 30) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 31) export default App
+
+
+bmi.js
+
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  1) import React from 'react';
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  2) import Box from '@mui/material/Box';
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  3) import TextField from '@mui/material/TextField';
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  4) 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400  5) export default class BMI extends React.Component {
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400  6)       state = {
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400  7) weight: "",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400  8)               height: ""
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400  9)       }
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 10) 
+byte 785...skipping...
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  1) import React from 'react';
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  2) import Box from '@mui/material/Box';
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  3) import TextField from '@mui/material/TextField';
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  4) 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400  5) export default class BMI extends React.Component {
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400  6)       state = {
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400  7) weight: "",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400  8)               height: ""
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400  9)       }
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 10) 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 11)       change = (e) => {
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 12)               this.setState({
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 13)                               [e.target.name]: e.target.value
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 14)                               });
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 15)       };
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 16)       // resets state 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 17)       onSubmit = e => {
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 18)               e.preventDefault();
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 19)               this.props.onSubmit(this.state)
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 20)                       this.setState({
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 21) weight: "",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 22) height: ""
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 23) })
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 24) };
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 25) 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 26) render(){
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 27)       return(
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 28)                       <form style ={{display: "block", 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 29)                       textAlign: "center",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 30)                       marginLeft: "auto",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 31)                       marginRight: "auto"}}>
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 32)                       <h1 style={{color: "#1976d2",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 33)                       fontFamily: "Arial",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 34)                       fontWeight: 400,
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 35)                       fontSize: "1 em",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 36)                       lineHeight: "1.4375 em",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 37)                       letterSpacing: "0.00938 em",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 38)                       padding: 0}}>BMI Calculation</h1>
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 39)                       <h2 style={{color: "#00000099",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 40)                       fontFamily: "Arial",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 41)                       fontWeight: 400,
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 42)                       fontSize: "1 em",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 43)                       lineHeight: "1.4375 em",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 44)                       letterSpacing: "0.00938 em",
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 45)                       padding: 0}} >Enter your weight and height to calculate youy Body Mass Index </h2>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 46) 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 47)                       <Box  
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 48)                       component="form"
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 49)                       sx={{
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 50)                               '& > :not(style)': { m: 2, width: '25ch' },
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 51)                       }}
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 52)       noValidate
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 53)               autoComplete="off"
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 54)               >
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 55) 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 56)               {/* sets the state of the weight and height to the value of the input */}
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 57)       <TextField id="standard-basic" 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 58)               name = "weight"
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 59)               label="Weight (lbs)" 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 60)               variant="standard"
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 61)               value = {this.state.username}
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 62)       onChange = {e => this.change(e)}
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 63)       size = "small"
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 64)               /> 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 65)               <br />
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 66) 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 67)               <TextField id="standard-basic" 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 68)               name = "height"
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 69)               type = "Height"
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 70)               label="Height (in)" 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 71)               variant="standard"
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 72)               value = {this.state.password}
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 73)       onChange = {e => this.change(e)}
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 74)       size = "small"
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 75)               /> 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 76)               </Box>   
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 77) 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 78)               <h1>Your BMI is: </h1> 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 79) 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 80)               {/* calculates the BMI */}
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 81)       <p>{(this.state.weight / ((this.state.height) * (this.state.height))) * 703}</p>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 82) 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 83)       {/* prints the categories for BMI */}
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 84)       <h2>BMI Categories: </h2>
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 85)               <h4>Underweight = less than 18.5</h4>
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 86)               <h4>Normal weight = 18.5 to 24.9</h4>
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 87)               <h4>Overweight = 25 to 29.9</h4>
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 88)               <h4>Obesity = BMI of 30 or greater</h4>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 89) 
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 90)               <br/>
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 91)               </form>
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 92)               )
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 93) }
+1cb05ba8 (Shervin A Shirani 2022-10-12 22:53:36 -0400 94) }
+
+
+calorie.js
+
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400   1) import React from 'react';
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400   2) import Box from '@mui/material/Box';
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400   3) import TextField from '@mui/material/TextField';
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400   4) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400   5) export default class Calorie extends React.Component {
+345f8ae9 (Shervin A Shirani 2022-10-12 22:45:24 -0400   6)     state = { 
+ee07278c (Shervin A Shirani 2022-10-12 18:47:43 -0400   7)         weight: "", 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400   8)         height: "",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400   9)         age: "",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  10)     }
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  11) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  12)     change = (e) => {
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  13)         this.setState({
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  14)             [e.target.name]: e.target.value
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  15)         });
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  16)     };
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  17)     // resets state
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  18)     onSubmit = e => {
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  19)         e.preventDefault();
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  20)         this.props.onSubmit(this.state)
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  21)         this.setState({
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  22)             weight: "",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  23)             height: "",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  24)             age: "", 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  25)         })
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  26)     };
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  27) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  28)     render(){
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  29)         return(
+46a2912a (Shervin A Shirani 2022-10-12 22:48:23 -0400  30)             // creates a form
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  31)             <form style ={{display: "block", 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  32)             textAlign: "center",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  33)             marginLeft: "auto",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  34)             marginRight: "auto"}}>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  35)                 <h1 style={{color: "#1976d2",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  36)             fontFamily: "Arial",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  37)             fontWeight: 400,
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  38)             fontSize: "1 em",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  39)             lineHeight: "1.4375 em",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  40)             letterSpacing: "0.00938 em",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  41)             padding: 0}}>Calorie Calculation</h1>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  42)                         <h2 style={{color: "#00000099",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  43)             fontFamily: "Arial",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  44)             fontWeight: 400,
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  45)             fontSize: "1 em",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  46)             lineHeight: "1.4375 em",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  47)             letterSpacing: "0.00938 em",
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  48)             padding: 0}} >Enter your weight, age, and height to calculate the number of calories you need >
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  49) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  50)                  <Box  
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  51)                 component="form"
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  52)                 sx={{
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  53)                   '& > :not(style)': { m: 2, width: '25ch' },
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  54)                 }}
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  55)                 noValidate
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  56)                 autoComplete="off"
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  57)               >
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  58) 
+46a2912a (Shervin A Shirani 2022-10-12 22:48:23 -0400  59)                 {/* sets the state of the weight, height, and age to the value of the input */}
+46a2912a (Shervin A Shirani 2022-10-12 22:48:23 -0400  60) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  61)                  <TextField id="standard-basic" 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  62)                  name = "weight"
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  63)                 label="Weight (kg)" 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  64)                 variant="standard"
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  65)                value = {this.state.username}
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  66)                 onChange = {e => this.change(e)}
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  67)                 size = "small"
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  68)                  /> 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  69)                  <br />
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  70) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  71)                  <TextField id="standard-basic" 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  72)                  name = "age"
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  73)                 label="Age (yrs)" 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  74)                 variant="standard"
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  75)                value = {this.state.username}
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  76)                 onChange = {e => this.change(e)}
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  77)                 size = "small"
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  78)                  /> 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  79)                  <br />
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  80)                
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  81)                 <TextField id="standard-basic" 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  82)                  name = "height"
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  83)                  type = "Height"
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  84)                 label="Height (cm)" 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  85)                 variant="standard"
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  86)                value = {this.state.password}
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  87)                 onChange = {e => this.change(e)}
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  88)                 size = "small"
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  89)                  /> 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  90)                  </Box>   
+46a2912a (Shervin A Shirani 2022-10-12 22:48:23 -0400  91)            
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  92)                 <h2>Number of calories you burn during a typical day: </h2>
+46a2912a (Shervin A Shirani 2022-10-12 22:48:23 -0400  93) 
+46a2912a (Shervin A Shirani 2022-10-12 22:48:23 -0400  94) 
+46a2912a (Shervin A Shirani 2022-10-12 22:48:23 -0400  95)                 {/* calculates the number of calories you burn during a typical day given user input */}
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  96)                 <h4>Sedentary (little or no exercise):</h4>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  97)                 <p>Male: {((66.47 + (13.75 * this.state.weight) + (5.003 * this.state.height) - (6.75 * th>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  98)                 <p>Female: {((655.1 + (9.563 * this.state.weight) + (1.850 * this.state.height) - (4.676 *>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400  99)                 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 100)                 <h4>Lightly active (exercise 1 to 3 days/week):</h4>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 101)                 <p>Male: {((66.47 + (13.75 * this.state.weight) + (5.003 * this.state.height) - (6.75 * th>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 102)                 <p>Female: {((655.1 + (9.563 * this.state.weight) + (1.850 * this.state.height) - (4.676 *>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 103) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 104)                 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 105)                 <h4>Moderately active (exercise 3 to 5 days/week):</h4>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 106)                 <p>Male: {((66.47 + (13.75 * this.state.weight) + (5.003 * this.state.height) - (6.75 * th>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 107)                 <p>Female: {((655.1 + (9.563 * this.state.weight) + (1.850 * this.state.height) - (4.676 *>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 108) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 109)                 <h4>Active (exercise 6 to 7 days/week):</h4>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 110)                 <p>Male: {((66.47 + (13.75 * this.state.weight) + (5.003 * this.state.height) - (6.75 * th>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 111)                 <p>Female: {((655.1 + (9.563 * this.state.weight) + (1.850 * this.state.height) - (4.676 *>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 112) 
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 113)                 <h4>Very active (hard exercise 6 to 7 days/week):</h4>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 114)                 <p>Male: {((66.47 + (13.75 * this.state.weight) + (5.003 * this.state.height) - (6.75 * th>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 115)                 <p>Female: {((655.1 + (9.563 * this.state.weight) + (1.850 * this.state.height) - (4.676 *>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 116)                 <br/>
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 117)                
+46a2912a (Shervin A Shirani 2022-10-12 22:48:23 -0400 118)             </form>           
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 119)         )
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 120)     }
+da60a2ea (Shervin A Shirani 2022-10-12 15:36:37 -0400 121) }

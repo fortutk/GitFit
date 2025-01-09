@@ -1,0 +1,46 @@
+Product Requirements Document
+Name: Fort Hunter
+
+
+Product Name: GitFit
+
+
+Background
+
+Going to the gym can be an intimidating experience for newcomers.  They often have no idea where to start and where
+to go from there.  We want to change that.  Our product will make things easier for newcomers by giving them iformation 
+on where to start based on their goals in the gym. 
+
+
+Project Overview
+
+Our project will help gym-goers track and find new workouts.  Users will be able to select workouts they have done
+and they can enter the weight, number of sets, and number of reps.  This will allow the user to track how they have
+progressed over time and see what they have done in the past.  We will also give reccomendations on workouts the user
+should do based on what their goals are in the gym.  We also want to have an array of health tools that the user can use 
+to get a better understanding of where they stand health wise.
+
+
+Features
+
+1. Create an Account. As a new user, I want to register by creating a username and password so that the system can remember me and my data
+2. Forgot Password. As a user, I want to be able to reset my password if I forget it so that I can log in to my account
+3. Protein Calculator. As a user, I want to be able to calculate how much protein I need to consume so that I can meet my goals
+4. BMI Calculator. As a user, I want to be able to calculate my BMI so that I can see if I am overweight or not
+5. Water Calculator. As a user, I want to be able to calculate how much water I need to drink so that I can stay hydrated
+6. Heart Rate Calculator. As a user, I want to be able to calculate what my heart rate should be so that I can see if I am in the right zone
+7. Max Rep Calculator. As a user, I want to be able to calculate what my max rep should be so that I can see what weight I should be lifting and what my max rep should be
+8. Calorie Calculator. As a user, I want to be able to calculate the number of calories I burn during a typical day so that I can see how many calories I need to consume and burn
+9. Workout Tracking. As a user, I want to be able to see the workouts I have done in the past.
+10. Workout reccomendations. As a user, I want to find new workouts based on what my goals are in the gym.
+
+
+Technologies to be used
+
+The technologies that will be used in this project are:
+1. React
+2. Javascript
+3. HTML
+4. CSS
+5. MUI
+6. Firebase

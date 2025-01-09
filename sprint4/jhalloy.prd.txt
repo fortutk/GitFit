@@ -1,0 +1,24 @@
+# Product Requirements Document
+Name: Julian Halloy
+
+Product Name: GitFit
+
+## Background
+Many people workout or have a desire to workout. It is a part of having a healthy lifestyle. GitFit provides much needed tools, which are useful to both beginners and veteran gym-goers. Combining so much functionality into one neat package provides the user with easy access to everything they need.
+
+## Project Overview
+GitFit is an easy-to-use web application for all your workout needs, including workout recommendations, workout tracking, and more. Users can find the right workouts to achieve their goals, and stay consistent by logging their progress. The web app also provides a wide variety of tools such as a body mass index (BMI) calculator, daily protein and calorie recommendations, heart rate calculator, 1 rep max calculator, and water intake needs.
+
+## Features
+
+1. **Workout tracking** As a user, I want to keep track of my workouts so I can review my progress.
+2. **Cardio workout options** As someone who prefers cardio workouts to weightlifting, I want to be able to track my cardio workouts.
+3. **Workout Options Drop-Down Menu** As someone who is busy, I don't want to type in each workout I log, instead I want to select it from several preset options.
+4. **Workout Delete Button** As someone who makes mistakes, I would like to be able to delete workouts I added by accident with a delete button.
+5. **Website Theme** As someone who will use this web app often, I would like the page to look good so that I enjoy visiting it.
+6. **Workout Goals** As someone who is new to the gym, I would like GitFit to choose a workout plan for me to achieve my goals.
+7. **Create Account** As a user of GitFit, I would like to create an account and sign in so that the web app can remember me.
+8. **Calorie Calculator** As someone who values my health, I would like to know how many calories I am burning, and use that to figure out how much I need to eat.
+
+## Technologies to be used
+This web app would primarily use React for the main code. The web app would use Firebase to store important user data, such as their logged workouts and goals. The Material UI (MUI) package provides easy to use React tools for creating a beatiful web interface. All of these tools combine to create a powerful system for development of a great web application for working out!

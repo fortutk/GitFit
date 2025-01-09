@@ -1,0 +1,50 @@
+Product Requirements Document
+Name: Jack Skupien
+
+
+Product Name: GitFit
+
+
+Background
+
+For years, countless people (me included) have always had trouble getting into a routine at the gym. It seems as though every time we try,
+we lose our momentum, even with the best of efforts. We aim to fix that problem by helping people keep track of their gym progress.
+Additionally, for those who are not as experienced with workout routines, no worries. Our interactive goals tab will help even the most
+inexperienced gym-goers begin their new routine.
+
+
+Project Overview
+
+Our project will help gym-goers track and find new workouts.  Users will be able to select workouts they have done
+and they can enter the weight, number of sets, and number of reps.  This will allow the user to track how they have
+progressed over time and see what they have done in the past.  We will also give reccomendations on workouts the user
+should do based on what their goals are in the gym.  We also want to have an array of health tools that the user can use 
+to get a better understanding of where they stand health wise.
+
+
+Features
+
+1. Create an Account. register by creating a username and password so that the system can remember you and your data
+2. Forgot Password. reset your password if you forget it so that you can log in to your account
+3. Protein Calculator. calculate how much protein you need to consume so that you can meet your goals
+4. BMI Calculator. calculate your BMI so that you can see if you are overweight or not
+5. Water Calculator. calculate how much water you need to drink so that you can stay hydrated
+6. Heart Rate Calculator. calculate what your heart rate should be so that you can see if you are in the right zone
+7. Max Rep Calculator. calculate what your max rep should be so that you can see what weight you should be lifting and what your max rep should be
+8. Calorie Calculator. calculate the number of calories you burn during a typical day so that you can see how many calories you need to consume and burn
+9. Workout Tracking. see the workouts you have done in the past.
+10. Workout reccomendations. find new workouts based on what your goals are in the gym.
+
+
+Technologies to be used
+
+The technologies that will be used in this project are:
+1. React
+2. ReactDOM
+3. Javascript
+4. HTML
+5. CSS
+6. MUI
+7. Firebase
+8. date-fns
+9. Font Awesome

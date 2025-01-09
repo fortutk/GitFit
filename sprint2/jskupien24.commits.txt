@@ -1,0 +1,272 @@
+49097ada (Jack 2022-10-27 20:48:21 -0400  1) import * as React from 'react';
+49097ada (Jack 2022-10-27 20:48:21 -0400  2) import Box from '@mui/material/Box';
+49097ada (Jack 2022-10-27 20:48:21 -0400  3) import TextField from '@mui/material/TextField';
+49097ada (Jack 2022-10-27 20:48:21 -0400  4) import Button from '@mui/material/Button';   
+49097ada (Jack 2022-10-27 20:48:21 -0400  5) // import {Link} from 'react-router-dom';    
+49097ada (Jack 2022-10-27 20:48:21 -0400  6)
+49097ada (Jack 2022-10-27 20:48:21 -0400  7) export default class forgotP extends React.Component {
+49097ada (Jack 2022-10-27 20:48:21 -0400  8)     state = {
+:...skipping...
+49097ada (Jack 2022-10-27 20:48:21 -0400  1) import * as React from 'react';
+49097ada (Jack 2022-10-27 20:48:21 -0400  2) import Box from '@mui/material/Box';
+49097ada (Jack 2022-10-27 20:48:21 -0400  3) import TextField from '@mui/material/TextField';
+49097ada (Jack 2022-10-27 20:48:21 -0400  4) import Button from '@mui/material/Button';   
+49097ada (Jack 2022-10-27 20:48:21 -0400  5) // import {Link} from 'react-router-dom';    
+49097ada (Jack 2022-10-27 20:48:21 -0400  6)
+49097ada (Jack 2022-10-27 20:48:21 -0400  7) export default class forgotP extends React.Component {
+49097ada (Jack 2022-10-27 20:48:21 -0400  8)     state = {
+49097ada (Jack 2022-10-27 20:48:21 -0400  9)         email: ""
+49097ada (Jack 2022-10-27 20:48:21 -0400 10)     }
+49097ada (Jack 2022-10-27 20:48:21 -0400 11)
+49097ada (Jack 2022-10-27 20:48:21 -0400 12)     change = (e) => {
+49097ada (Jack 2022-10-27 20:48:21 -0400  1) import * as React from 'react';
+49097ada (Jack 2022-10-27 20:48:21 -0400  2) import Box from '@mui/material/Box';
+49097ada (Jack 2022-10-27 20:48:21 -0400  3) import TextField from '@mui/material/TextField';
+49097ada (Jack 2022-10-27 20:48:21 -0400  4) import Button from '@mui/material/Button';   
+49097ada (Jack 2022-10-27 20:48:21 -0400  5) // import {Link} from 'react-router-dom';    
+49097ada (Jack 2022-10-27 20:48:21 -0400  6)
+49097ada (Jack 2022-10-27 20:48:21 -0400  7) export default class forgotP extends React.Component {
+49097ada (Jack 2022-10-27 20:48:21 -0400  8)     state = {
+49097ada (Jack 2022-10-27 20:48:21 -0400  9)         email: ""
+49097ada (Jack 2022-10-27 20:48:21 -0400 10)     }
+49097ada (Jack 2022-10-27 20:48:21 -0400 11)
+49097ada (Jack 2022-10-27 20:48:21 -0400 12)     change = (e) => {
+49097ada (Jack 2022-10-27 20:48:21 -0400 13)         this.setState({
+49097ada (Jack 2022-10-27 20:48:21 -0400 14)             [e.target.name]: e.target.value  
+49097ada (Jack 2022-10-27 20:48:21 -0400 15)         });
+49097ada (Jack 2022-10-27 20:48:21 -0400 16)     };
+49097ada (Jack 2022-10-27 20:48:21 -0400 17)
+49097ada (Jack 2022-10-27 20:48:21 -0400 18)     onSubmit = e => {
+49097ada (Jack 2022-10-27 20:48:21 -0400 19)         e.preventDefault();
+49097ada (Jack 2022-10-27 20:48:21 -0400 20)         this.props.onSubmit(this.state)      
+49097ada (Jack 2022-10-27 20:48:21 -0400 21)         this.setState({
+49097ada (Jack 2022-10-27 20:48:21 -0400 22)             email: ""
+:...skipping...
+49097ada (Jack 2022-10-27 20:48:21 -0400  1) import * as React from 'react';
+49097ada (Jack 2022-10-27 20:48:21 -0400  2) import Box from '@mui/material/Box';
+49097ada (Jack 2022-10-27 20:48:21 -0400  3) import TextField from '@mui/material/TextField';
+49097ada (Jack 2022-10-27 20:48:21 -0400  4) import Button from '@mui/material/Button';   
+49097ada (Jack 2022-10-27 20:48:21 -0400  5) // import {Link} from 'react-router-dom';    
+49097ada (Jack 2022-10-27 20:48:21 -0400  6)
+49097ada (Jack 2022-10-27 20:48:21 -0400  7) export default class forgotP extends React.Component {
+49097ada (Jack 2022-10-27 20:48:21 -0400  8)     state = {
+49097ada (Jack 2022-10-27 20:48:21 -0400  9)         email: ""
+49097ada (Jack 2022-10-27 20:48:21 -0400 10)     }
+49097ada (Jack 2022-10-27 20:48:21 -0400 11)
+49097ada (Jack 2022-10-27 20:48:21 -0400 12)     change = (e) => {
+49097ada (Jack 2022-10-27 20:48:21 -0400 13)         this.setState({
+49097ada (Jack 2022-10-27 20:48:21 -0400 14)             [e.target.name]: e.target.value  
+49097ada (Jack 2022-10-27 20:48:21 -0400 15)         });
+49097ada (Jack 2022-10-27 20:48:21 -0400 16)     };
+49097ada (Jack 2022-10-27 20:48:21 -0400 17)
+49097ada (Jack 2022-10-27 20:48:21 -0400 18)     onSubmit = e => {
+49097ada (Jack 2022-10-27 20:48:21 -0400 19)         e.preventDefault();
+49097ada (Jack 2022-10-27 20:48:21 -0400 20)         this.props.onSubmit(this.state)      
+49097ada (Jack 2022-10-27 20:48:21 -0400 21)         this.setState({
+49097ada (Jack 2022-10-27 20:48:21 -0400 22)             email: ""
+49097ada (Jack 2022-10-27 20:48:21 -0400 23)         })
+49097ada (Jack 2022-10-27 20:48:21 -0400 24)     };
+49097ada (Jack 2022-10-27 20:48:21 -0400 25)
+49097ada (Jack 2022-10-27 20:48:21 -0400 26)
+
+49097ada (Jack 2022-10-27 20:48:21 -0400  1) import * as React from 'react';
+49097ada (Jack 2022-10-27 20:48:21 -0400  2) import Box from '@mui/material/Box';
+49097ada (Jack 2022-10-27 20:48:21 -0400  3) import TextField from '@mui/material/TextField';
+49097ada (Jack 2022-10-27 20:48:21 -0400  4) import Button from '@mui/material/Button';
+49097ada (Jack 2022-10-27 20:48:21 -0400  5) import {Link} from 'react-router-dom';
+49097ada (Jack 2022-10-27 20:48:21 -0400  6)
+49097ada (Jack 2022-10-27 20:48:21 -0400  7) export default class Login extends React.Component {
+
+49097ada (Jack 2022-10-27 20:48:21 -0400  1) import React, { Component } from 'react';
+49097ada (Jack 2022-10-27 20:48:21 -0400  2) import SignUp from './signUp';
+49097ada (Jack 2022-10-27 20:48:21 -0400  3) import Login from './login'  
+49097ada (Jack 2022-10-27 20:48:21 -0400  4) import ForgotP from './forgotP'
+49097ada (Jack 2022-10-27 20:48:21 -0400  5) import ReactDOM from 'react-dom';
+49097ada (Jack 2022-10-27 20:48:21 -0400  6) import {
+49097ada (Jack 2022-10-27 20:48:21 -0400  7)     BrowserRouter as Router, 
+49097ada (Jack 2022-10-27 20:48:21 -0400  8)     Routes,
+49097ada (Jack 2022-10-27 20:48:21 -0400  9)     Route,
+:...skipping...
+49097ada (Jack 2022-10-27 20:48:21 -0400  1) import React, { Component } from 'react';
+49097ada (Jack 2022-10-27 20:48:21 -0400  2) import SignUp from './signUp';
+49097ada (Jack 2022-10-27 20:48:21 -0400  3) import Login from './login'  
+49097ada (Jack 2022-10-27 20:48:21 -0400  4) import ForgotP from './forgotP'
+49097ada (Jack 2022-10-27 20:48:21 -0400  5) import ReactDOM from 'react-dom';
+49097ada (Jack 2022-10-27 20:48:21 -0400  6) import {
+49097ada (Jack 2022-10-27 20:48:21 -0400  7)     BrowserRouter as Router, 
+49097ada (Jack 2022-10-27 20:48:21 -0400  8)     Routes,
+49097ada (Jack 2022-10-27 20:48:21 -0400  9)     Route,
+49097ada (Jack 2022-10-27 20:48:21 -0400 10)     Redirect,
+49097ada (Jack 2022-10-27 20:48:21 -0400 11)     Link
+49097ada (Jack 2022-10-27 20:48:21 -0400 12)   } from "react-router-dom"; 
+49097ada (Jack 2022-10-27 20:48:21 -0400 13)
+49097ada (Jack 2022-10-27 20:48:21 -0400 14)   function LogIn(){
+49097ada (Jack 2022-10-27 20:48:21 -0400 15)     return(
+49097ada (Jack 2022-10-27 20:48:21 -0400 16)       <Login />
+49097ada (Jack 2022-10-27 20:48:21 -0400 17)     )
+49097ada (Jack 2022-10-27 20:48:21 -0400 18)   }
+49097ada (Jack 2022-10-27 20:48:21 -0400 19)
+49097ada (Jack 2022-10-27 20:48:21 -0400 20)   function Signup(){
+
+49097ada (Jack 2022-10-27 20:48:21 -0400   1) import * as React from 'react';
+49097ada (Jack 2022-10-27 20:48:21 -0400   2) import Box from '@mui/material/Box';
+49097ada (Jack 2022-10-27 20:48:21 -0400   3) import TextField from '@mui/material/TextField';
+49097ada (Jack 2022-10-27 20:48:21 -0400   4) import Button from '@mui/material/Button';
+49097ada (Jack 2022-10-27 20:48:21 -0400   5) import {Link} from 'react-router-dom'
+49097ada (Jack 2022-10-27 20:48:21 -0400   6) // import login from './login'
+49097ada (Jack 2022-10-27 20:48:21 -0400   7) // import { initializeApp } 
+from "firebase/app";
+49097ada (Jack 2022-10-27 20:48:21 -0400   8) // import { getAuth, createU
+
+e833de14 (Jack 2022-10-13 09:08:42 -0400  1) import React from 'react';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  2) import '../../App.css';      
+e833de14 (Jack 2022-10-13 09:08:42 -0400  3) import HeroSection from '../HeroSection';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  4) function Home(){
+e833de14 (Jack 2022-10-13 09:08:42 -0400  5)     return(
+e833de14 (Jack 2022-10-13 09:08:42 -0400  6)         <>
+e833de14 (Jack 2022-10-13 09:08:42 -0400  7)             <HeroSection />  
+e833de14 (Jack 2022-10-13 09:08:42 -0400  8)         </>
+e833de14 (Jack 2022-10-13 09:08:42 -0400  9)     );
+e833de14 (Jack 2022-10-13 09:08:42 -0400 10) }
+e833de14 (Jack 2022-10-13 09:08:42 -0400 11)
+e833de14 (Jack 2022-10-13 09:08:42 -0400 12) export default Home;
+
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400  1) @import url('https://fonts.googleapis.com/css2? family=Nanum+Gothic&display=swap');
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400  2) :root {
+e833de14 (Jack 2022-10-13 09:08:42 -0400  3)     --primary: #fff;
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400  4)   }
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400  5)
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400  6)   .btn {
+e833de14 (Jack 2022-10-13 09:08:42 -0400  7)     padding: 8px 20px;       
+e833de14 (Jack 2022-10-13 09:08:42 -0400  8)     border-radius: 2px;      
+e833de14 (Jack 2022-10-13 09:08:42 -0400  9)     outline: none;
+e833de14 (Jack 2022-10-13 09:08:42 -0400 10)     border: none;
+e833de14 (Jack 2022-10-13 09:08:42 -0400 11)     cursor: pointer;
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400 12)     font-family: 'Nanum Gothic', sans-serif;
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400 13)   }
+
+e833de14 (Jack 2022-10-13 09:08:42 -0400  1) import React from 'react';   
+e833de14 (Jack 2022-10-13 09:08:42 -0400  2) import './Button.css';       
+e833de14 (Jack 2022-10-13 09:08:42 -0400  3) import {Link} from 'react-router-dom';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  4)
+e833de14 (Jack 2022-10-13 09:08:42 -0400  5) const STYLES=['btn--primary','btn--outline']
+e833de14 (Jack 2022-10-13 09:08:42 -0400  6) const SIZES=['btn--medium','button--large']
+e833de14 (Jack 2022-10-13 09:08:42 -0400  7)
+e833de14 (Jack 2022-10-13 09:08:42 -0400  8) export const Button=({children,type,onClick,buttonStyle,buttonSize})=>{
+e833de14 (Jack 2022-10-13 09:08:42 -0400  9)     const checkButtonStyle=STYLES.includes(buttonStyle)?buttonStyle:STYLES[0]
+e833de14 (Jack 2022-10-13 09:08:42 -0400 10)
+PS C:\Users\slimt\GitFit> git blame Jack/src/components/Button.js
+e833de14 (Jack 2022-10-13 09:08:42 -0400  1) import React from 'react';   
+e833de14 (Jack 2022-10-13 09:08:42 -0400  2) import './Button.css';       
+e833de14 (Jack 2022-10-13 09:08:42 -0400  3) import {Link} from 'react-router-dom';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  4) 
+e833de14 (Jack 2022-10-13 09:08:42 -0400  5) const STYLES=['btn--primary','btn--outline']
+e833de14 (Jack 2022-10-13 09:08:42 -0400  6) const SIZES=['btn--medium','button--large']
+e833de14 (Jack 2022-10-13 09:08:42 -0400  7) 
+e833de14 (Jack 2022-10-13 09:08:42 -0400  8) export const Button=({children,type,onClick,buttonStyle,buttonSize})=>{
+e833de14 (Jack 2022-10-13 09:08:42 -0400  9)     const checkButtonStyle=STYLES.includes(buttonStyle)?buttonStyle:STYLES[0]
+e833de14 (Jack 2022-10-13 09:08:42 -0400 10)
+e833de14 (Jack 2022-10-13 09:08:42 -0400 11)     const checkButtonSize=SIZES.includes(buttonSize)?buttonSize:SIZES[0]
+e833de14 (Jack 2022-10-13 09:08:42 -0400 12)
+e833de14 (Jack 2022-10-13 09:08:42 -0400 13)     return(
+49097ada (Jack 2022-10-27 20:48:21 -0400 14)         <Link to='/login' className='btn-mobile'>
+e833de14 (Jack 2022-10-13 09:08:42 -0400 15)             <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
+e833de14 (Jack 2022-10-13 09:08:42 -0400 16)                 {children}   
+e833de14 (Jack 2022-10-13 09:08:42 -0400 17)             </button>        
+e833de14 (Jack 2022-10-13 09:08:42 -0400 18)         </Link>
+e833de14 (Jack 2022-10-13 09:08:42 -0400 19)     )
+
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400  1) @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400  2) 
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400  3) video {
+e833de14 (Jack 2022-10-13 09:08:42 -0400  4)     object-fit: cover;       
+e833de14 (Jack 2022-10-13 09:08:42 -0400  5)     width: 100%;
+e833de14 (Jack 2022-10-13 09:08:42 -0400  6)     height: 100%;
+e833de14 (Jack 2022-10-13 09:08:42 -0400  7)     position: fixed;
+
+e833de14 (Jack 2022-10-13 09:08:42 -0400  1) import React from 'react';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  2) import '../App.css';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  3) import { Button } from './Button';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  4) import './HeroSection.css';  
+e833de14 (Jack 2022-10-13 09:08:42 -0400  5)
+e833de14 (Jack 2022-10-13 09:08:42 -0400  6) function HeroSection() {     
+e833de14 (Jack 2022-10-13 09:08:42 -0400  7)   return (
+
+e833de14 (Jack 2022-10-13 09:08:42 -0400  2) import '../App.css';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  3) import { Button } from './Button';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  4) import './HeroSection.css';  
+e833de14 (Jack 2022-10-13 09:08:42 -0400  5)
+e833de14 (Jack 2022-10-13 09:08:42 -0400  6) function HeroSection() {     
+e833de14 (Jack 2022-10-13 09:08:42 -0400  7)   return (
+PS C:\Users\slimt\GitFit> git blame Jack/src/components/Navbar.css        
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400   1) @import url('https://fonts.googleapis.com/css2? family=Ubuntu+Condensed&display=swap');
+e833de14 (Jack 2022-10-13 09:08:42 -0400   2) .navbar {
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400   3)     /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400   4)     background: #23252E;    
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400   5)     height: 85px;
+e833de14 (Jack 2022-10-13 09:08:42 -0400   6)     display: flex;
+
+oogleapis.com/css2? family=Ubuntu+Condensed&display=swap');
+e833de14 (Jack 2022-10-13 09:08:42 -0400   2) .navbar {
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400   3)     /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400   4)     background: #23252E;    
+7efaafe1 (Jack 2022-10-27 15:38:04 -0400   5)     height: 85px;
+e833de14 (Jack 2022-10-13 09:08:42 -0400   6)     display: flex;
+PS C:\Users\slimt\GitFit> git blame Jack/src/components/Navbar.js         
+e833de14 (Jack 2022-10-13 09:08:42 -0400  1) import React, {useState, useEffect} from 'react';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  2) import {Link} from 'react-router-dom';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  3) import { Button } from './Button';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  4) import './Navbar.css';       
+e833de14 (Jack 2022-10-13 09:08:42 -0400  5)
+:...skipping...
+e833de14 (Jack 2022-10-13 09:08:42 -0400  1) import React, {useState, useEffect} from 'react';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  2) import {Link} from 'react-router-dom';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  3) import { Button } from './Button';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  4) import './Navbar.css';       
+e833de14 (Jack 2022-10-13 09:08:42 -0400  5)
+e833de14 (Jack 2022-10-13 09:08:42 -0400  6) function Navbar() {
+e833de14 (Jack 2022-10-13 09:08:42 -0400  7)   const [click,setClick]=useState(false);
+e833de14 (Jack 2022-10-13 09:08:42 -0400  8)   const handleClick=()=>setClick(!click);
+e833de14 (Jack 2022-10-13 09:08:42 -0400  9)   const closeMobileMenu=()=>setClick(false);
+e833de14 (Jack 2022-10-13 09:08:42 -0400 10)   const [button,setButton]=useState(true);
+e833de14 (Jack 2022-10-13 09:08:42 -0400 11)   const showButton=()=>{     
+e833de14 (Jack 2022-10-13 09:08:42 -0400 12)     if(window.innerWidth<=960){
+e833de14 (Jack 2022-10-13 09:08:42 -0400 13)         setButton(false);    
+:...skipping...
+e833de14 (Jack 2022-10-13 09:08:42 -0400  1) import React, {useState, useEffect} from 'react';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  2) import {Link} from 'react-router-dom';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  3) import { Button } from './Button';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  4) import './Navbar.css';       
+e833de14 (Jack 2022-10-13 09:08:42 -0400  5)
+e833de14 (Jack 2022-10-13 09:08:42 -0400  6) function Navbar() {
+e833de14 (Jack 2022-10-13 09:08:42 -0400  7)   const [click,setClick]=useState(false);
+e833de14 (Jack 2022-10-13 09:08:42 -0400  8)   const handleClick=()=>setClick(!click);
+e833de14 (Jack 2022-10-13 09:08:42 -0400  9)   const closeMobileMenu=()=>setClick(false);
+e833de14 (Jack 2022-10-13 09:08:42 -0400 10)   const [button,setButton]=useState(true);
+e833de14 (Jack 2022-10-13 09:08:42 -0400 11)   const showButton=()=>{     
+e833de14 (Jack 2022-10-13 09:08:42 -0400 12)     if(window.innerWidth<=960){
+e833de14 (Jack 2022-10-13 09:08:42 -0400 13)         setButton(false);    
+e833de14 (Jack 2022-10-13 09:08:42 -0400 14)     }else{
+e833de14 (Jack 2022-10-13 09:08:42 -0400 15)         setButton(true);     
+e833de14 (Jack 2022-10-13 09:08:42 -0400 16)     }
+:...skipping...
+e833de14 (Jack 2022-10-13 09:08:42 -0400  1) import React, {useState, useEffect} from 'react';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  2) import {Link} from 'react-router-dom';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  3) import { Button } from './Button';
+e833de14 (Jack 2022-10-13 09:08:42 -0400  4) import './Navbar.css';       
+e833de14 (Jack 2022-10-13 09:08:42 -0400  5)
+e833de14 (Jack 2022-10-13 09:08:42 -0400  6) function Navbar() {
+e833de14 (Jack 2022-10-13 09:08:42 -0400  7)   const [click,setClick]=useState(false);
+e833de14 (Jack 2022-10-13 09:08:42 -0400  8)   const handleClick=()=>setClick(!click);
+e833de14 (Jack 2022-10-13 09:08:42 -0400  9)   const closeMobileMenu=()=>setClick(false);
+e833de14 (Jack 2022-10-13 09:08:42 -0400 10)   const [button,setButton]=useState(true);
+e833de14 (Jack 2022-10-13 09:08:42 -0400 11)   const showButton=()=>{     
+e833de14 (Jack 2022-10-13 09:08:42 -0400 12)     if(window.innerWidth<=960){
+e833de14 (Jack 2022-10-13 09:08:42 -0400 13)         setButton(false);    
+e833de14 (Jack 2022-10-13 09:08:42 -0400 14)     }else{
+e833de14 (Jack 2022-10-13 09:08:42 -0400 15)         setButton(true);     
+e833de14 (Jack 2022-10-13 09:08:42 -0400 16)     }
+e833de14 (Jack 2022-10-13 09:08:42 -0400 17)   };
+e833de14 (Jack 2022-10-13 09:08:42 -0400 18)
+e833de14 (Jack 2022-10-13 09:08:42 -0400 19)   useEffect(()=>{showButton();},[]);
+

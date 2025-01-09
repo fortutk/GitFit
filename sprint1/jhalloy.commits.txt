@@ -1,0 +1,116 @@
+Julian/src/App.js
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400  1) import { useState } from 'react'
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400  2) import Button from './components/Button.js'
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400  3) import Workouts from './components/Workouts.js'
+acd5107b (Julian Halloy 2022-10-12 17:42:00 -0400  4) 
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400  5) const App = () => {
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400  6)   const [workouts, setWorkouts] = useState([
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400  7)     {
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400  8)       id: 0,
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400  9)       text: "Bench press",
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 10)       // TODO: let user enter date or record current date?
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 11)       date: "10/12/2022",
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 12)       weight: 135,
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 13)       reps: 10,
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 14)       sets: 3
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 15)     },
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 16)     {
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 17)       id: 1,
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 18)       text: "Squat",
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 19)       date: "10/10/2022",
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 20)       weight: 135,
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 21)       reps: 13,
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 22)       sets: 2
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 23)     },
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 24)     {
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 25)       id: 2,
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 26)       text: "Pull ups",
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 27)       date: "10/08/2022",
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 28)       // TODO: have special case for bodyweight exercises?
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 29)       weight: 0,
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 30)       reps: 5,
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 31)       sets: 5
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 32)     }
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 33)   ])
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 34)   // click fn - TODO: create new workout
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400 35)   const onClick = () => {
+483f6eaa (Julian Halloy 2022-10-12 21:07:55 -0400 36)       console.log('create new workout')
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400 37)   }
+acd5107b (Julian Halloy 2022-10-12 17:42:00 -0400 38)   return (
+acd5107b (Julian Halloy 2022-10-12 17:42:00 -0400 39)     <div className="App">
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400 40)       <h1>Workout Tracker</h1>
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400 41)       <Button text="Add" onClick={onClick}/>
+f419de8f (Julian Halloy 2022-10-12 21:06:48 -0400 42)       <Workouts workouts={workouts} />
+acd5107b (Julian Halloy 2022-10-12 17:42:00 -0400 43)     </div>
+acd5107b (Julian Halloy 2022-10-12 17:42:00 -0400 44)   );
+acd5107b (Julian Halloy 2022-10-12 17:42:00 -0400 45) }
+acd5107b (Julian Halloy 2022-10-12 17:42:00 -0400 46) 
+acd5107b (Julian Halloy 2022-10-12 17:42:00 -0400 47) export default App;
+
+Julian/src/components/Button.js
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400  1) import PropTypes from 'prop-types'
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400  2) 
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400  3) const Button = ({text, onClick}) => {
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400  4)     
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400  5) 
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400  6)     return (
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400  7)         <button onClick={onClick}>{text}</button>
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400  8)     )
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400  9) }
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400 10) 
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400 11) Button.propTypes = {
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400 12)     text: PropTypes.string,
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400 13)     onClick: PropTypes.func
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400 14) }
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400 15) 
+91318f4a (Julian Halloy 2022-10-12 18:24:08 -0400 16) export default Button
+
+Julian/src/components/Workout.js
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400  1) const Workout = ({ workout }) => {
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400  2)     return (
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400  3)         <div className="workout">
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400  4)             <h3>{workout.text}</h3>
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400  5)             <h5>Reps per set: {workout.reps}</h5>
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400  6)             <h5>Sets: {workout.sets}</h5>
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400  7)             <h5>Weight: {workout.weight}lbs</h5>
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400  8)         </div>
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400  9)     )
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400 10) }
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400 11) 
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 12) export default Workout
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 13) /*
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 14) <h3>{workout.name}</h3>
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 15)             <h3>Reps per set: {workout.reps}</h3>
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 16)             <h3>Sets: {workout.sets}</h3>*/
+
+Julian/src/components/Workouts.js
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400  1) import Workout from './Workout'
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400  2) 
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400  3) const Workouts = ({ workouts }) => {
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400  4)     return (
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400  5)         <div>
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400  6)             {workouts.map((workout) => (
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400  7)               <Workout key={workout.id} workout={workout} />
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400  8)             ))}
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400  9)         </div>
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400 10)     )
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400 11) }
+21039d0d (Julian Halloy 2022-10-12 20:23:52 -0400 12) 
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 13) export default Workouts
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 14) /*
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 15) {workouts.map((workout) => (
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 16)     <Workout key={workout.id} workout={workout} />
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 17) ))}*/
+
+Julian/src/index.css
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 14) 
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 15) .workout {
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 16)   margin: 5px;
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 17)   padding: 10px 20px;
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 18)   background-color: lightblue;
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 19) }
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 20) 
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 21) .workout h3 {
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 22)   display: flex;
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 23)   justify-content: space-between;
+6e8b6c36 (Julian Halloy 2022-10-12 21:11:01 -0400 24) }

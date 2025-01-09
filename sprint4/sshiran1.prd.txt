@@ -1,0 +1,40 @@
+Product Requirements Document
+Name: Shervin Shirani
+
+
+Product Name: GitFit
+
+
+Background
+
+
+Often, for people who are beginners in working out or going to the gym, it is difficult for them to know what exercises to do and how to do them. This is because they are not familiar with the gym equipment and the exercises that can be done with them. This is where the product comes in. The product is a website that will help beginners in the gym to know what exercises to do and how to do them. Furthermore, there are a wide array of tools within the website that will let the user know things such as how much water to drink, the amount of protein they need, or even what their body mass index is. Therefore, this website will provide a one-stop shop for all of the user needs and therefore provide a larger market opportunity.
+
+
+Project Overview
+
+
+The main idea of this project is to be able to track workouts, nutrition, and other aspects of fitness more effectively. The app will be a website and it will make it easy to track your progress over time so you are more efficient at progressing through your fitness journey. Many people who work out do not track their progress and it really hurts their potential gains. A big reason why people do not track themselves is that it's not very convenient. An easy-to-use website would solve this problem.
+
+
+Features
+
+
+1. Create an Account. As a new user, I want to register by creating a username and password so that the system can remember me and my data
+2. Forgot Password. As a user, I want to be able to reset my password if I forget it so that I can log in to my account
+3. Protein Calculator. As a user, I want to be able to calculate how much protein I need to consume so that I can meet my goals
+4. BMI Calculator. As a user, I want to be able to calculate my BMI so that I can see if I am overweight or not
+5. Water Calculator. As a user, I want to be able to calculate how much water I need to drink so that I can stay hydrated
+6. Heart Rate Calculator. As a user, I want to be able to calculate what my heart rate should be so that I can see if I am in the right zone
+7. Max Rep Calculator. As a user, I want to be able to calculate what my max rep should be so that I can see what weight I should be lifting and what my max rep should be
+8. Calorie Calculator. As a user, I want to be able to calculate the number of calories I burn during a typical day so that I can see how many calories I need to consume and burn
+
+
+Technologies to be used
+
+
+The technologies that will be used in this project are:
+1. React
+2. Javascript
+3. MUI
+4. Firebase

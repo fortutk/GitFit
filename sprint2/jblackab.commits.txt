@@ -1,0 +1,2256 @@
+App.js
+
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   14)   onSubmit = fields => {
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   15)     this.setState({ fields });
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   16)     console.log("App comp got: ", fields);
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   17)   };
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   20) 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   21)     const print_workout = () => {
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   22)       if(this.state.fields.DaysAWeek === '4'){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   23)         if(this.state.fields.Goal === "Gain"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   24)           if(this.state.fields.DesiredBody === "Stronger"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   25)             return <p> we are in print workout and Days a week is 4 and gain and Strong>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   26)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   27)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   28)               Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   29)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   30)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   31)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   32)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   33)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   34)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   35)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   36)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   37)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   38)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   39)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   40)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   41)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   42)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   43)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   44)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   45)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   46)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   47)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   48)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   49)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   50)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   51)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   52)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   53)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   54)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   55)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   56)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   57)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   58)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   59)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   60)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   61)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   62)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   63)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   64)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   65)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   66)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   67)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   68)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   69)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   70)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   71)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   72)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   73)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   74)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   75)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   76)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   77)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   78)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   79)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   80)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   81)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   82)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   83)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   84)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   85)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   86)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   87)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   88)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   89)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   90)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   91)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   92)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   93)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   94)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   95)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   96)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   97)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   98)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400   99)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  100)               </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  101)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  102)           else if(this.state.fields.DesiredBody === "Shred"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  103)             return <p>we are in print workout and Days a week is 4 and gain and Shred 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  104)               Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  105)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  106)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  107)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  108)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  109)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  110)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  111)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  112)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  113)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  114)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  115)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  116)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  117)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  118)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  119)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  120)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  121)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  122)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  123)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  124)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  125)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  126)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  127)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  128)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  129)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  130)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  131)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  132)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  133)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  134)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  135)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  136)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  137)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  138)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  139)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  140)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  141)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  142)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  143)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  144)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  145)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  146)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  147)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  148)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  149)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  150)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  151)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  152)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  153)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  154)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  155)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  156)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  157)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  158)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  159)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  160)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  161)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  162)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  163)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  164)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  165)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  166)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  167)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  168)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  169)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  170)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  171)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  172)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  173)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  174)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  175)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  176)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  177)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  178)           else if(this.state.fields.DesiredBody === "Cut"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  179)             return <p>we are in print workout and Days a week is 4 and gain and Cut
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  180)               Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  181)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  182)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  183)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  184)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  185)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  186)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  187)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  188)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  189)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  190)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  191)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  192)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  193)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  194)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  195)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  196)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  197)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  198)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  199)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  200)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  201)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  202)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  203)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  204)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  205)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  206)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  207)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  208)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  209)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  210)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  211)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  212)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  213)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  214)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  215)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  216)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  217)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  218)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  219)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  220)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  221)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  222)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  223)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  224)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  225)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  226)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  227)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  228)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  229)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  230)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  231)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  232)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  233)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  234)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  235)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  236)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  237)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  238)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  239)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  240)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  241)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  242)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  243)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  244)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  245)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  246)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  247)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  248)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  249)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  250)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  251)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  252)                </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  253)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  254)         }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  255)         else if(this.state.fields.Goal === "Lose"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  256)           if(this.state.fields.DesiredBody === "Stronger"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  257)             return <p>we are in print workout and Days a week is 4 and Lose and Stronge>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  258)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  259)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  260)               Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  261)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  262)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  263)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  264)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  265)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  266)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  267)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  268)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  269)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  270)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  271)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  272)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  273)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  274)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  275)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  276)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  277)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  278)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  279)               15-20 minutes of cardio with heart rate above 120 bpm (increase the time >
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  280)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  281)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  282)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  283)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  284)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  285)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  286)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  287)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  288)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  289)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  290)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  291)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  292)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  293)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  294)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  295)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  296)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  297)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  298)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  299)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  300)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  301)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  302)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  303)               15-20 minutes of cardio with heart rate above 120 bpm (increase the time >
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  304)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  305)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  306)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  307)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  308)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  309)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  310)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  311)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  312)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  313)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  314)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  315)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  316)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  317)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  318)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  319)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  320)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  321)               15-20 minutes of cardio with heart rate above 120 bpm (increase the time >
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  322)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  323)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  324)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  325)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  326)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  327)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  328)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  329)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  330)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  331)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  332)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  333)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  334)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  335)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  336)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  337)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  338)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  339)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  340)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  341)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  342)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  343)           else if(this.state.fields.DesiredBody === "Shred"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  344)             return <p>we are in print workout and Days a week is 4 and Lose and Shred
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  345)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  346)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  347)               Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  348)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  349)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  350)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  351)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  352)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  353)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  354)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  355)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  356)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  357)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  358)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  359)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  360)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  361)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  362)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  363)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  364)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  365)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  366)               15-20 minutes of cardio with heart rate above 120 bpm (increase the time >
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  367)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  368)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  369)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  370)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  371)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  372)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  373)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  374)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  375)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  376)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  377)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  378)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  379)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  380)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  381)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  382)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  383)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  384)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  385)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  386)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  387)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  388)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  389)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  390)               15-20 minutes of cardio with heart rate above 120 bpm (increase the time >
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  391)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  392)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  393)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  394)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  395)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  396)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  397)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  398)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  399)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  400)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  401)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  402)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  403)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  404)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  405)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  406)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  407)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  408)               15-20 minutes of cardio with heart rate above 120 bpm (increase the time >
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  409)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  410)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  411)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  412)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  413)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  414)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  415)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  416)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  417)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  418)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  419)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  420)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  421)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  422)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  423)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  424)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  425)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  426)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  427)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  428)               </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  429)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  430)           else if(this.state.fields.DesiredBody === "Cut"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  431)             return <p>we are in print workout and Days a week is 4 and Lose and Cut 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  432)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  433)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  434)               Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  435)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  436)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  437)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  438)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  439)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  440)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  441)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  442)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  443)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  444)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  445)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  446)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  447)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  448)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  449)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  450)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  451)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  452)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  453)               15-20 minutes of cardio with heart rate above 120 bpm (increase the time >
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  454)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  455)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  456)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  457)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  458)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  459)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  460)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  461)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  462)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  463)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  464)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  465)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  466)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  467)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  468)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  469)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  470)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  471)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  472)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  473)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  474)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  475)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  476)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  477)               15-20 minutes of cardio with heart rate above 120 bpm (increase the time >
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  478)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  479)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  480)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  481)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  482)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  483)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  484)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  485)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  486)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  487)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  488)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  489)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  490)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  491)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  492)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  493)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  494)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  495)               15-20 minutes of cardio with heart rate above 120 bpm (increase the time >
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  496)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  497)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  498)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  499)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  500)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  501)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  502)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  503)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  504)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  505)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  506)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  507)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  508)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  509)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  510)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  511)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  512)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  513)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  514)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  515)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  516)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  517)         }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  518)         else if(this.state.fields.Goal === "Maintain"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  519)           if(this.state.fields.DesiredBody === "Stronger"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  520)             return <p>we are in print workout and Days a week is 4 and Maintain and Str>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  521)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  522)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  523)               Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  524)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  525)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  526)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  527)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  528)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  529)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  530)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  531)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  532)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  533)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  534)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  535)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  536)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  537)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  538)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  539)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  540)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  541)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  542)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  543)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  544)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  545)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  546)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  547)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  548)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  549)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  550)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  551)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  552)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  553)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  554)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  555)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  556)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  557)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  558)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  559)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  560)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  561)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  562)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  563)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  564)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  565)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  566)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  567)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  568)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  569)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  570)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  571)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  572)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  573)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  574)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  575)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  576)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  577)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  578)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  579)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  580)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  581)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  582)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  583)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  584)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  585)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  586)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  587)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  588)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  589)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  590)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  591)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  592)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  593)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  594)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  595)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  596)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  597)           else if(this.state.fields.DesiredBody === "Shred"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  598)             return <p>we are in print workout and Days a week is 4 and Maintain and Shr>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  599)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  600)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  601)               Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  602)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  603)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  604)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  605)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  606)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  607)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  608)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  609)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  610)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  611)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  612)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  613)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  614)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  615)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  616)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  617)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  618)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  619)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  620)               15-20 minutes of cardio with heart rate above 120 bpm (increase the time >
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  621)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  622)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  623)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  624)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  625)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  626)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  627)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  628)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  629)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  630)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  631)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  632)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  633)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  634)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  635)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  636)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  637)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  638)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  639)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  640)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  641)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  642)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  643)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  644)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  645)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  646)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  647)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  648)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  649)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  650)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  651)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  652)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  653)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  654)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  655)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  656)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  657)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  658)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  659)               15-20 minutes of cardio with heart rate above 120 bpm (increase the time >
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  660)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  661)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  662)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  663)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  664)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  665)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  666)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  667)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  668)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  669)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  670)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  671)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  672)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  673)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  674)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  675)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  676)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  677)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  678)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  679)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  680)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  681)           else if(this.state.fields.DesiredBody === "Cut"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  682)             return <p>we are in print workout and Days a week is 4 and Maintain and Cut 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  683)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  684)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  685)               Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  686)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  687)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  688)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  689)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  690)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  691)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  692)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  693)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  694)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  695)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  696)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  697)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  698)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  699)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  700)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  701)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  702)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  703)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  704)               15-20 minutes of cardio with heart rate above 120 bpm (increase the time >
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  705)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  706)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  707)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  708)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  709)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  710)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  711)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  712)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  713)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  714)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  715)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  716)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  717)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  718)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  719)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  720)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  721)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  722)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  723)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  724)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  725)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  726)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  727)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  728)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  729)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  730)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  731)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  732)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  733)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  734)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  735)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  736)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  737)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  738)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  739)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  740)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  741)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  742)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  743)               15-20 minutes of cardio with heart rate above 120 bpm (increase the time >
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  744)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  745)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  746)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  747)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  748)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  749)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  750)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  751)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  752)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  753)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  754)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  755)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  756)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  757)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  758)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  759)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  760)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  761)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  762)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  763)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  764)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  765)         }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  766)       }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  767)       else if(this.state.fields.DaysAWeek === '5'){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  768)         if(this.state.fields.Goal === "Gain"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  769)           if(this.state.fields.DesiredBody === "Stronger"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  770)             return <p>we are in print workout and Days a week is 5 and gain and Stronge>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  771)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  772)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  773)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  774)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  775)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  776)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  777)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  778)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  779)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  780)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  781)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  782)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  783)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  784)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  785)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  786)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  787)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  788)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  789)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  790)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  791)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  792)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  793)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  794)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  795)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  796)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  797)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  798)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  799)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  800)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  801)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  802)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  803)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  804)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  805)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  806)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  807)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  808)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  809)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  810)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  811)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  812)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  813)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  814)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  815)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  816)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  817)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  818)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  819)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  820)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  821)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  822)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  823)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  824)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  825)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  826)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  827)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  828)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  829)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  830)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  831)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  832)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  833)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  834)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  835)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  836)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  837)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  838)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  839)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  840)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  841)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  842)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  843)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  844)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  845)             Day 5 (run if you are working 5 days a week):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  846)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  847)               Overhead Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  848)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  849)               Egyptian Lateral raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  850)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  851)               Seated row:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  852)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  853)               Hip Abduction:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  854)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  855)               Dumbbell Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  856)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  857)               Crunches:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  858)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  859)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  860)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  861)               Push Ups: AMRAP for 2 sets
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  862)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  863)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  864)           else if(this.state.fields.DesiredBody === "Shred"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  865)             return <p>we are in print workout and Days a week is 5 and gain and Shred 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  866)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  867)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  868)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  869)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  870)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  871)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  872)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  873)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  874)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  875)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  876)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  877)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  878)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  879)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  880)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  881)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  882)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  883)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  884)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  885)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  886)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  887)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  888)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  889)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  890)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  891)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  892)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  893)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  894)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  895)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  896)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  897)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  898)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  899)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  900)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  901)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  902)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  903)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  904)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  905)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  906)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  907)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  908)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  909)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  910)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  911)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  912)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  913)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  914)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  915)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  916)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  917)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  918)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  919)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  920)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  921)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  922)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  923)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  924)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  925)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  926)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  927)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  928)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  929)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  930)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  931)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  932)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  933)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  934)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  935)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  936)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  937)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  938)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  939)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  940)             Day 5 (run if you are working 5 days a week):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  941)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  942)               Overhead Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  943)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  944)               Egyptian Lateral raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  945)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  946)               Seated row:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  947)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  948)               Hip Abduction:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  949)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  950)               Dumbbell Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  951)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  952)               Crunches:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  953)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  954)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  955)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  956)               Push Ups: AMRAP for 2 sets
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  957)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  958)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  959)           else if(this.state.fields.DesiredBody === "Cut"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  960)             return <p>we are in print workout and Days a week is 5 and gain and Cut 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  961)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  962)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  963)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  964)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  965)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  966)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  967)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  968)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  969)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  970)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  971)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  972)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  973)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  974)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  975)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  976)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  977)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  978)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  979)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  980)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  981)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  982)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  983)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  984)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  985)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  986)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  987)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  988)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  989)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  990)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  991)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  992)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  993)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  994)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  995)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  996)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  997)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  998)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400  999)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1000)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1001)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1002)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1003)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1004)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1005)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1006)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1007)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1008)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1009)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1010)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1011)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1012)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1013)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1014)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1015)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1016)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1017)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1018)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1019)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1020)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1021)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1022)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1023)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1024)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1025)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1026)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1027)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1028)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1029)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1030)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1031)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1032)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1033)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1034)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1035)             Day 5 (run if you are working 5 days a week):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1036)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1037)               Overhead Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1038)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1039)               Egyptian Lateral raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1040)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1041)               Seated row:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1042)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1043)               Hip Abduction:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1044)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1045)               Dumbbell Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1046)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1047)               Crunches:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1048)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1049)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1050)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1051)               Push Ups: AMRAP for 2 sets
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1052)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1053)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1054)         }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1055)         else if(this.state.fields.Goal === "Lose"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1056)           if(this.state.fields.DesiredBody === "Stronger"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1057)             return <p>we are in print workout and Days a week is 5 and Lose and Stronge>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1058)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1059)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1060)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1061)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1062)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1063)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1064)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1065)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1066)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1067)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1068)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1069)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1070)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1071)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1072)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1073)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1074)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1075)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1076)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1077)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1078)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1079)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1080)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1081)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1082)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1083)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1084)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1085)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1086)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1087)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1088)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1089)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1090)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1091)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1092)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1093)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1094)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1095)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1096)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1097)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1098)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1099)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1100)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1101)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1102)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1103)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1104)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1105)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1106)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1107)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1108)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1109)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1110)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1111)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1112)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1113)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1114)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1115)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1116)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1117)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1118)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1119)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1120)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1121)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1122)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1123)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1124)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1125)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1126)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1127)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1128)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1129)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1130)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1131)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1132)             Day 5 (run if you are working 5 days a week):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1133)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1134)               Overhead Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1135)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1136)               Egyptian Lateral raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1137)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1138)               Seated row:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1139)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1140)               Hip Abduction:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1141)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1142)               Dumbbell Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1143)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1144)               Crunches:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1145)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1146)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1147)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1148)               Push Ups: AMRAP for 2 sets
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1149)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1150)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1151)           else if(this.state.fields.DesiredBody === "Shred"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1152)             return <p>we are in print workout and Days a week is 5 and Lose and Shred 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1153)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1154)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1155)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1156)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1157)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1158)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1159)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1160)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1161)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1162)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1163)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1164)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1165)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1166)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1167)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1168)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1169)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1170)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1171)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1172)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1173)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1174)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1175)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1176)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1177)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1178)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1179)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1180)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1181)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1182)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1183)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1184)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1185)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1186)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1187)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1188)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1189)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1190)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1191)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1192)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1193)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1194)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1195)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1196)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1197)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1198)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1199)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1200)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1201)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1202)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1203)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1204)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1205)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1206)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1207)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1208)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1209)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1210)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1211)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1212)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1213)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1214)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1215)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1216)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1217)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1218)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1219)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1220)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1221)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1222)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1223)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1224)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1225)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1226)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1227)             Day 5 (run if you are working 5 days a week):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1228)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1229)               Overhead Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1230)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1231)               Egyptian Lateral raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1232)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1233)               Seated row:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1234)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1235)               Hip Abduction:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1236)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1237)               Dumbbell Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1238)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1239)               Crunches:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1240)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1241)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1242)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1243)               Push Ups: AMRAP for 2 sets
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1244)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1245)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1246)           else if(this.state.fields.DesiredBody === "Cut"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1247)             return <p>we are in print workout and Days a week is 5 and Lose and Cut 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1248)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1249)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1250)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1251)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1252)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1253)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1254)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1255)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1256)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1257)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1258)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1259)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1260)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1261)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1262)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1263)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1264)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1265)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1266)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1267)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1268)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1269)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1270)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1271)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1272)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1273)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1274)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1275)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1276)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1277)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1278)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1279)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1280)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1281)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1282)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1283)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1284)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1285)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1286)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1287)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1288)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1289)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1290)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1291)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1292)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1293)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1294)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1295)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1296)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1297)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1298)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1299)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1300)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1301)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1302)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1303)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1304)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1305)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1306)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1307)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1308)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1309)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1310)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1311)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1312)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1313)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1314)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1315)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1316)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1317)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1318)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1319)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1320)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1321)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1322)             Day 5 (run if you are working 5 days a week):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1323)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1324)               Overhead Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1325)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1326)               Egyptian Lateral raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1327)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1328)               Seated row:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1329)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1330)               Hip Abduction:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1331)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1332)               Dumbbell Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1333)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1334)               Crunches:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1335)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1336)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1337)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1338)               Push Ups: AMRAP for 2 sets
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1339)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1340)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1341)         }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1342)         else if(this.state.fields.Goal === "Maintain"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1343)           if(this.state.fields.DesiredBody === "Stronger"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1344)             return <p>we are in print workout and Days a week is 4 and Maintain and Str>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1345)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1346)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1347)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1348)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1349)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1350)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1351)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1352)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1353)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1354)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1355)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1356)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1357)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1358)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1359)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1360)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1361)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1362)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1363)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1364)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1365)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1366)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1367)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1368)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1369)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1370)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1371)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1372)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1373)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1374)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1375)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1376)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1377)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1378)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1379)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1380)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1381)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1382)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1383)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1384)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1385)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1386)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1387)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1388)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1389)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1390)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1391)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1392)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1393)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1394)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1395)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1396)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1397)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1398)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1399)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1400)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1401)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1402)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1403)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1404)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1405)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1406)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1407)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1408)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1409)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1410)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1411)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1412)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1413)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1414)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1415)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1416)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1417)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1418)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1419)             Day 5 (run if you are working 5 days a week):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1420)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1421)               Overhead Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1422)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1423)               Egyptian Lateral raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1424)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1425)               Seated row:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1426)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1427)               Hip Abduction:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1428)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1429)               Dumbbell Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1430)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1431)               Crunches:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1432)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1433)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1434)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1435)               Push Ups: AMRAP for 2 sets
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1436)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1437)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1438)           else if(this.state.fields.DesiredBody === "Shred"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1439)             return <p>we are in print workout and Days a week is 4 and Maintain and Shr>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1440)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1441)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1442)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1443)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1444)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1445)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1446)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1447)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1448)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1449)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1450)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1451)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1452)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1453)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1454)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1455)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1456)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1457)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1458)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1459)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1460)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1461)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1462)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1463)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1464)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1465)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1466)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1467)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1468)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1469)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1470)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1471)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1472)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1473)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1474)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1475)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1476)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1477)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1478)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1479)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1480)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1481)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1482)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1483)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1484)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1485)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1486)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1487)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1488)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1489)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1490)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1491)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1492)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1493)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1494)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1495)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1496)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1497)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1498)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1499)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1500)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1501)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1502)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1503)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1504)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1505)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1506)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1507)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1508)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1509)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1510)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1511)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1512)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1513)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1514)             Day 5 (run if you are working 5 days a week):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1515)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1516)               Overhead Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1517)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1518)               Egyptian Lateral raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1519)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1520)               Seated row:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1521)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1522)               Hip Abduction:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1523)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1524)               Dumbbell Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1525)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1526)               Crunches:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1527)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1528)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1529)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1530)               Push Ups: AMRAP for 2 sets
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1531)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1532)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1533)           else if(this.state.fields.DesiredBody === "Cut"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1534)             return <p>we are in print workout and Days a week is 4 and Maintain and Cut 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1535)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1536)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1537)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1538)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1539)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1540)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1541)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1542)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1543)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1544)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1545)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1546)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1547)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1548)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1549)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1550)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1551)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1552)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1553)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1554)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1555)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1556)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1557)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1558)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1559)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1560)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1561)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1562)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1563)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1564)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1565)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1566)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1567)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1568)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1569)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1570)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1571)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1572)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1573)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1574)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1575)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1576)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1577)             Day 3 (if running a 4 or 5 day a week program):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1578)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1579)               Pull ups (if able add weight, if not able go to assisted pull ups make su>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1580)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1581)               Row (either bent over barbell or with dumb bells on an incline bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1582)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1583)               Leg Press or front squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1584)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1585)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1586)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1587)               Upright row either cable or barbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1588)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1589)               Curls (Hammer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1590)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1591)               <br/>  
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1592)             Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1593)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1594)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1595)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1596)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1597)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1598)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1599)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1600)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1601)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1602)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1603)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1604)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1605)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1606)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1607)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1608)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1609)             Day 5 (run if you are working 5 days a week):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1610)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1611)               Overhead Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1612)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1613)               Egyptian Lateral raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1614)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1615)               Seated row:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1616)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1617)               Hip Abduction:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1618)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1619)               Dumbbell Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1620)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1621)               Crunches:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1622)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1623)               Calf raises:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1624)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1625)               Push Ups: AMRAP for 2 sets
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1626)             </p>;
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1627)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1628)         }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1629)       }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1630)       else{
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1631)         if(this.state.fields.Goal === "Gain"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1632)             if(this.state.fields.DesiredBody === "Stronger"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1633)               return <p> 3 days Gain and Stronger
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1634)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1635)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1636)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1637)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1638)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1639)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1640)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1641)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1642)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1643)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1644)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1645)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1646)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1647)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1648)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1649)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1650)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1651)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1652)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1653)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1654)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1655)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1656)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1657)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1658)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1659)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1660)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1661)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1662)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1663)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1664)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1665)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1666)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1667)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1668)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1669)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1670)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1671)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1672)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1673)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1674)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1675)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1676)               Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1677)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1678)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1679)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1680)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1681)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1682)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1683)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1684)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1685)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1686)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1687)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1688)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1689)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1690)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1691)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1692)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1693)               </p>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1694)             }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1695)             else if(this.state.fields.DesiredBody === "Shred"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1696)               return <p> 3 days Gain and Shred
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1697)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1698)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1699)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1700)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1701)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1702)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1703)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1704)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1705)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1706)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1707)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1708)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1709)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1710)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1711)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1712)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1713)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1714)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1715)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1716)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1717)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1718)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1719)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1720)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1721)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1722)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1723)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1724)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1725)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1726)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1727)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1728)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1729)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1730)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1731)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1732)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1733)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1734)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1735)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1736)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1737)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1738)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1739)               Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1740)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1741)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1742)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1743)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1744)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1745)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1746)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1747)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1748)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1749)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1750)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1751)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1752)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1753)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1754)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1755)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1756)               </p>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1757)             }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1758)             else if(this.state.fields.DesiredBody === "Cut"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1759)               return <p> 3 days Gain and Cut
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1760)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1761)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1762)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1763)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1764)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1765)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1766)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1767)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1768)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1769)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1770)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1771)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1772)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1773)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1774)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1775)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1776)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1777)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1778)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1779)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1780)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1781)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1782)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1783)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1784)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1785)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1786)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1787)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1788)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1789)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1790)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1791)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1792)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1793)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1794)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1795)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1796)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1797)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1798)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1799)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1800)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1801)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1802)               Day 4:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1803)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1804)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1805)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1806)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1807)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1808)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1809)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1810)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1811)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1812)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1813)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1814)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1815)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1816)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1817)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1818)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1819)               </p>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1820)             }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1821)         }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1822)         else if(this.state.fields.Goal === "Lose"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1823)           if(this.state.fields.DesiredBody === "Stronger"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1824)             return <p> 3 days Lose and Stronger
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1825)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1826)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1827)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1828)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1829)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1830)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1831)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1832)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1833)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1834)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1835)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1836)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1837)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1838)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1839)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1840)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1841)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1842)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1843)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1844)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1845)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1846)               Cardio for 15-20 minutes keeping your heart rate above 120bpm (increase o>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1847)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1848)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1849)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1850)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1851)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1852)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1853)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1854)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1855)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1856)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1857)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1858)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1859)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1860)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1861)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1862)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1863)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1864)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1865)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1866)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1867)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1868)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1869)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1870)               cardio for 15-20 minutes keeping your heart rate above 120bpm (increase o>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1871)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1872)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1873)               Day 3:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1874)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1875)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1876)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1877)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1878)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1879)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1880)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1881)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1882)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1883)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1884)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1885)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1886)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1887)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1888)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1889)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1890)               Cardio for 15-20 minutes keeping heart rate above 120bpm (increase over t>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1891)               </p>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1892)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1893)           else if(this.state.fields.DesiredBody === "Shred"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1894)             return <p> 3 days Lose and Shred
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1895)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1896)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1897)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1898)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1899)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1900)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1901)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1902)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1903)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1904)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1905)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1906)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1907)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1908)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1909)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1910)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1911)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1912)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1913)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1914)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1915)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1916)               Cardio for 15-20 minutes keeping your heart rate above 120bpm (increase o>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1917)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1918)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1919)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1920)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1921)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1922)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1923)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1924)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1925)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1926)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1927)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1928)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1929)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1930)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1931)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1932)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1933)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1934)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1935)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1936)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1937)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1938)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1939)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1940)               cardio for 15-20 minutes keeping your heart rate above 120bpm (increase o>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1941)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1942)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1943)               Day 3:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1944)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1945)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1946)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1947)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1948)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1949)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1950)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1951)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1952)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1953)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1954)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1955)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1956)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1957)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1958)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1959)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1960)               Cardio for 15-20 minutes keeping heart rate above 120bpm (increase over t>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1961)               </p>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1962)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1963)           else if(this.state.fields.DesiredBody === "Cut"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1964)             return <p> 3 days Lose and Cut
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1965)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1966)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1967)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1968)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1969)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1970)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1971)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1972)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1973)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1974)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1975)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1976)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1977)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1978)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1979)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1980)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1981)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1982)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1983)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1984)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1985)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1986)               Cardio for 15-20 minutes keeping your heart rate above 120bpm (increase o>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1987)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1988)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1989)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1990)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1991)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1992)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1993)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1994)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1995)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1996)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1997)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1998)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 1999)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2000)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2001)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2002)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2003)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2004)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2005)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2006)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2007)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2008)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2009)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2010)               cardio for 15-20 minutes keeping your heart rate above 120bpm (increase o>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2011)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2012)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2013)               Day 3:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2014)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2015)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2016)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2017)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2018)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2019)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2020)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2021)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2022)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2023)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2024)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2025)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2026)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2027)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2028)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2029)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2030)               Cardio for 15-20 minutes keeping heart rate above 120bpm (increase over t>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2031)               </p>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2032)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2033)         }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2034)         else if(this.state.fields.Goal === "Maintain"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2035)           if(this.state.fields.DesiredBody === "Stronger"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2036)             return <p> 3 days Maintain and Stronger
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2037)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2038)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2039)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2040)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2041)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2042)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2043)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2044)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2045)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2046)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2047)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2048)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2049)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2050)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2051)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2052)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2053)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2054)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2055)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2056)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2057)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2058)               Cardio for 15-20 minutes keeping your heart rate above 120bpm (increase o>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2059)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2060)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2061)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2062)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2063)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2064)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2065)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2066)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2067)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2068)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2069)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2070)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2071)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2072)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2073)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2074)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2075)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2076)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2077)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2078)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2079)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2080)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2081)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2082)               cardio for 15-20 minutes keeping your heart rate above 120bpm (increase o>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2083)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2084)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2085)               Day 3:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2086)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2087)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2088)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2089)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2090)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2091)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2092)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2093)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2094)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2095)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2096)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2097)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2098)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2099)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2100)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2101)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2102)               Cardio for 15-20 minutes keeping heart rate above 120bpm (increase over t>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2103)               </p>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2104)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2105)           else if(this.state.fields.DesiredBody === "Shred"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2106)             return <p> 3 days Maintain and Shred
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2107)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2108)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2109)             Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2110)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2111)               Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2112)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2113)               Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2114)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2115)               Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2116)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2117)               Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2118)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2119)               Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2120)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2121)               Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2122)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2123)               Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2124)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2125)               Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2126)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2127)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2128)               Cardio for 15-20 minutes keeping your heart rate above 120bpm (increase o>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2129)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2130)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2131)             Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2132)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2133)               Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2134)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2135)               Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2136)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2137)               Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2138)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2139)               Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2140)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2141)               T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2142)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2143)               Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2144)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2145)               Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2146)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2147)               Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2148)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2149)               Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2150)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2151)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2152)               cardio for 15-20 minutes keeping your heart rate above 120bpm (increase o>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2153)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2154)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2155)               Day 3:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2156)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2157)               Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2158)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2159)               Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2160)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2161)               Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2162)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2163)               Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2164)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2165)               Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2166)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2167)               Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2168)               <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2169)               Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2170)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2171)               <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2172)               Cardio for 15-20 minutes keeping heart rate above 120bpm (increase over t>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2173)               </p>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2174)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2175)           else if(this.state.fields.DesiredBody === "Cut"){
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2176)             return <p> 3 days Maintain and Cut
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2177)             <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2178)             <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2179)           Day 1
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2180)           <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2181)             Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2182)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2183)             Leg Extension:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2184)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2185)             Front Squat:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2186)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2187)             Leg Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2188)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2189)             Calf Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2190)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2191)             Some Form of Curl:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2192)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2193)             Bicep Curls (Form can vary):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2194)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2195)             Hanging Leg raise
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2196)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2197)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2198)             Cardio for 15-20 minutes keeping your heart rate above 120bpm (increase ove>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2199)             <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2200)             <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2201)           Day 2:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2202)           <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2203)             Bench Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2204)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2205)             Overhead Press/raised bench press (alternating through the weeks):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2206)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2207)             Lateral raises, either Egyptian or dumbbell:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2208)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2209)             Lateral Pulldown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2210)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2211)             T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2212)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2213)             Romanian Deadlift or Barbell Hip Thrust:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2214)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2215)             Arnold Press:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2216)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2217)             Tricep Pressdown:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2218)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2219)             Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2220)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2221)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2222)             cardio for 15-20 minutes keeping your heart rate above 120bpm (increase ove>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2223)             <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2224)             <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2225)             Day 3:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2226)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2227)             Deadlift (If going for Strength):
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2228)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2229)             Dips:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2230)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2231)             Glute Ham Raise:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2232)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2233)             Leg Extensions:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2234)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2235)             Cable Pull over or Dumbell pull over:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2236)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2237)             Face Pull:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2238)             <br/> 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2239)             Skull Crushers:
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2240)             <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2241)             <br/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2242)             Cardio for 15-20 minutes keeping heart rate above 120bpm (increase over tim>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2243)             </p>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2244)           }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2245)         }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2246)       }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2247)     }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2248) 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2251)       {/* {print_workout()} */}
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2252)       <Form onSubmit={fields => this.onSubmit(fields)}/>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2253)       {/* {print_workout()} */}
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2257)        <p> Days a Week: {this.state.fields.DaysAWeek}</p>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2258)       {print_workout()}
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 2260)     
+
+Form.js
+
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 17)         this.props.onSubmit(this.state);
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 18)        this.props.onSubmit(this.state);
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 29)         //  console.log(this.state);
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 33)         const print_workout = () => {
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 34)             <p> we are in print_workout</p>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 35)         }
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 36)         if(this.state.Goal == "Gain") <h1> In Gain </h1>
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 62)                 
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 70)                     Days a Week: Best 4-5 (if not specified will automatically be 3)
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 72)                 {/* {print_workout()} */}
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 74)             
+9d0f5789 (John Blackaby 2022-10-27 17:39:14 -0400 76) 

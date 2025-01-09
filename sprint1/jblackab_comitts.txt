@@ -1,0 +1,173 @@
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  1) import React, {Component} from 'react';
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  2) import ReactDOM from 'react-dom';
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  3) import "./App.css";
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  4) import Form from "./Form";
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  5) //import{BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  6) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  7) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  8) class App extends Component {
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  9) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 10)   state = {
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 11)     fields: {}
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 12)   }; 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 13) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 14)   onChange = updatedValue => {
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 15)     this.setState({
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 16)       fields: {
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 17)         ...this.state.fields,
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 18)         ...updatedValue
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 19)       }
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 20)     });
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 21)   }
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 22) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 23)   render(){
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 24)     return ( 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 25)     <div className="App">
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 26)       <Form onChange={fields => this.onChange(fields)}/>
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 27)         <p>
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 28)          {JSON.stringify(this.state.fields, null, 2)}
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 29)        </p> 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 30)     </div>
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 31)     );
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 32)   }
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 33) }
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 34) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 35) export default App
+
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  1) import React from 'react';
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  2) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  3) export default class Form extends React.Component {
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  4)     state = {
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  5)        Goal: "",
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  6)        DesiredBody: "", 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  7)        DaysAWeek: ""
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  8)     };
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  9)     change = e => {
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 10)         this.props.onChange({ [e.target.name]: e.target.value })
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 11)         this.setState({
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 12)             [e.target.name]: e.target.value
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 13)         });
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 14)     };
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 15)     
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 16)     onSubmit = e => {
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 17)         e.preventDefault();
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 18)        // this.props.onSubmit(this.state);
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 19)         this.setState({
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 20)             Goal:"",
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 21)             DesiredBody:"",
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 22)             DaysAWeek:""
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 23)         });
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 24)         this.props.onChange({
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 25)             Goal: "",
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 26)             DesiredBody: "",
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 27)             DaysAWeek:""
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 28)         });
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 29)        // console.log(this.state);
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 30)     };
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 31) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 32)     render() {
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 33)         return ( 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 34)             <form>
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 35)                 <h1>Workout Goals</h1>
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 36)                 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 37)                 <input
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 38)                 name="Goal"
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 39)                 placeholder="Goal"
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 40)                 value={this.state.Goal} 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 41)                 onChange={e => this.change(e)}
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 42)                  />
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 43)                  <br />
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 44)                  <input 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 45)                 name="DesiredBody"
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 46)                 placeholder ="Desired Body"
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 47)                 value={this.state.DesiredBody} 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 48)                 onChange={e => this.change(e)}
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 49)                  />
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 50)                  <br />
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 51)                  <input 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 52)                 name="DaysAWeek"
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 53)                 placeholder ="Days A Week"
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 54)                 value={this.state.DaysAWeek} 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 55)                 onChange={e => this.change(e)}
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 56)                  />
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 57)                  <br />
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 58)                 <button onClick={e => this.onSubmit(e)}>Lets Git Fit</button>
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 59)                 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 60)                 <h6>
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 61)                     Examples of Goal: Gain, Lose, Maintain
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 62)                     <br />
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 63)                     Examples of Desired Body: Stronger, Shred, Cut
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 64)                     <br />
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 65)                     Days a Week: Best 4-5
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 66)                 </h6>
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 67)                 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 68)             </form> 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 69)         );
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 70)     } 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 71) }
+
+
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  1) # Workout Page:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  2) ### What are you wanting to do
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  3) - Lose?
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  4) - Gain?
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  5) - Shred?
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  6) - Strength or Physique?
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  7) - How Many Days a week are you wanting to workout?
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  8) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400  9) ### Workout Plans
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 10) - If(strength/lose gain or maintain)
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 11) - If lose: if 4 days, on days 1,2,3 add in a 15-20 minutes cardio with heart rate above 1>
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 12) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 13) - Day1: 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 14)     - Squat: 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 15)     - Leg Extension:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 16)     - Front Squat
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 17)     - Leg Curl:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 18)     - Calf Raise:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 19)     - Some Form of Curl:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 20)     - Bicep Curls (Form can vary)
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 21)     - Hanging Leg raise
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 22) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 23) - Day2:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 24)     - Bench Press:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 25)     - Overhead Press/raised bench press (alternating through the weeks):
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 26)     - Lateral raises, either Egyptian or dumbbell:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 27)     - Lateral Pulldown:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 28)     - T-Bar rows or Bent over Chest Rows (with Chest pinned against Bench):
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 29)     - Romanian Deadlift or Barbell Hip Thrust:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 30)     - Arnold Press:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 31)     - Tricep Pressdown:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 32)     - Shrugs (dumbbell, barbell, smith, hex, dead machine whatever you prefer):
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 33) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 34) - Day 3 (if running a 4 or 5 day a week program):
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 35)     - Pull ups (if able add weight, if not able go to assisted pull ups make sure to get >
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 36)     - Row (either bent over barbell or with dumb bells on an incline bench):
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 37)     - Leg Press or front squat:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 38)     - Calf raises:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 39)     - Upright row either cable or barbell:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 40)     - Curls (Hammer):
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 41) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 42) - Day 4:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 43) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 44)     - Deadlift (If going for Strength):
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 45)     - Dips:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 46)     - Glute Ham Raise:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 47)     - Leg Extensions:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 48)     - Cable Pull over or Dumbell pull over:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 49)     - Face Pull:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 50)     - Skull Crushers:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 51) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 52) - Day 5 (run if you are working 5 days a week):
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 53) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 54)     - Overhead Press:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 55)     - Egyptian Lateral raise:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 56)     - Seated row:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 57)     - Hip Abduction:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 58)     - Dumbbell Curl:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 59)     - Crunches:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 60)     - Calf raises:
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 61)     - Push Ups: AMRAP for 2 sets
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 62) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 63) 
+a11a57e3 (John Blackaby 2022-10-12 17:46:55 -0400 64) - For Shredding we will run the programs on higher reps, and lower weight. For strength i>

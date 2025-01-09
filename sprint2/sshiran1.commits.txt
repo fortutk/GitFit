@@ -1,0 +1,245 @@
+maxrep.js
+
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400  1) import React from 'react';
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400  2) import Box from '@mui/material/Box';
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400  3) import TextField from '@mui/material/TextField';
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400  4) 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400  5) export default class Rep extends React.Component {
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400  6)       state = {
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400  7)         weight: "",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400  8)               reps: ""
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400  9)       }
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 10) 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 11)       change = (e) => {
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 12)               this.setState({
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 13)                               [e.target.name]: e.target.value
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 14)                               });
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 15)       };
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 16)       // resets state 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 17)       onSubmit = e => {
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 18)               e.preventDefault();
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 19)               this.props.onSubmit(this.state)
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 20)                       this.setState({
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 21) weight: "",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 22) reps: ""
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 23) })
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 24) };
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 25) 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 26) render(){
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 27)       return(
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 28)                       <form style ={{display: "block", 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 29)                       textAlign: "center",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 30)                       marginLeft: "auto",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 31)                       marginRight: "auto"}}>
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 32)                       <h1 style={{color: "#1976d2",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 33)                       fontFamily: "Arial",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 34)                       fontWeight: 400,
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 35)                       fontSize: "1 em",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 36)                       lineHeight: "1.4375 em",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 37)                       letterSpacing: "0.00938 em",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 38)                       padding: 0}}>1 Rep Max Tool</h1>
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 39)                       <h2 style={{color: "#00000099",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 40)                       fontFamily: "Arial",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 41)                       fontWeight: 400,
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 42)                       fontSize: "1 em",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 43)                       lineHeight: "1.4375 em",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 44)                       letterSpacing: "0.00938 em",
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 45)                       padding: 0}} >Enter the weight and number of reps to calcualte your 1 rep max </h2>
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 46) 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 47)                       <Box  
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 48)                       component="form"
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 49)                       sx={{
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 50)                               '& > :not(style)': { m: 2, width: '25ch' },
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 51)                       }}
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 52)               noValidate
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 53)               autoComplete="off"
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 54)               >
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 55) 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 56)               {/* sets the state of the weight and height to the value of the input */}
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 57)       <TextField id="standard-basic" 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 58)               name = "weight"
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 59)               label="Weight (kg)" 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 60)               variant="standard"
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 61)               value = {this.state.username}
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 62)       onChange = {e => this.change(e)}
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 63)       size = "small"
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 64)               /> 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 65)               <br />
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 66) 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 67)               <TextField id="standard-basic" 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 68)               name = "reps"
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 69)               type = "Reight"
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 70)               label="Number of reps" 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 71)               variant="standard"
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 72)               value = {this.state.password}
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 73)       onChange = {e => this.change(e)}
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 74)       size = "small"
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 75)               /> 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 76)               </Box>   
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 77) 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 78)               <h1>Your 1 Rep Max is: </h1> 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 79) 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 80)               {/* calculates the BMI */}
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 81)       <p>{(this.state.weight / (( 1.0278 - 0.0278 * this.state.reps )))}</p>
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 82) 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 83)       {/* prints the categories for BMI */}
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 84)       <h2>What is a 1 rep max: </h2>
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 85)               <h4>In weight training, your 1 rep maximum is the maximum amount of weight that a person can possibly lift>
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 86)             It may also be considered as the maximum amount of force that can be generated in one maximal contraction.
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 87)             One repetition maximum can be used for determining an individual's maximum strength and is the method for de>
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 88)             the winner in events such as powerlifting and weightlifting competitions. One repetition maximum can also be>
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 89)             an upper limit, in order to determine the desired "load" for an exercise</h4>
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 90) 
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 91)               <br/>
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 92)               </form>
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 93)               )
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 94) }
+f5044c3a (Shervin A Shirani 2022-10-26 17:10:32 -0400 95) }
+
+
+heart_rate.js
+
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400  1) import React from 'react';
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400  2) import Box from '@mui/material/Box';
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400  3) import TextField from '@mui/material/TextField';
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400  4) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400  5) export default class Rate extends React.Component {
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400  6)       state = {
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400  7)         age: ""
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400  8)       }
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400  9) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 10)       change = (e) => {
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 11)               this.setState({
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 12)                               [e.target.name]: e.target.value
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 13)                               });
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 14)       };
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 15)       // resets state 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 16)       onSubmit = e => {
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 17)               e.preventDefault();
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 18)               this.props.onSubmit(this.state)
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 19)                       this.setState({
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 20) age: ""
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 21) })
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 22) };
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 23) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 24) render(){
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 25)       return(
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 26)                       <form style ={{display: "block", 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 27)                       textAlign: "center",
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 28)                       marginLeft: "auto",
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 29)                       marginRight: "auto"}}>
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 30)                       <h1 style={{color: "#1976d2",
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 31)                       fontFamily: "Arial",
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 32)                       fontWeight: 400,
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 33)                       fontSize: "1 em",
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 34)                       lineHeight: "1.4375 em",
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 35)                       letterSpacing: "0.00938 em",
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 36)                       padding: 0}}>Heart Rate </h1>
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 37)                       <h2 style={{color: "#00000099",
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 38)                       fontFamily: "Arial",
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 39)                       fontWeight: 400,
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 40)                       fontSize: "1 em",
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 41)                       lineHeight: "1.4375 em",
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 42)                       letterSpacing: "0.00938 em",
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 43)                       padding: 0}} >Enter your age </h2>
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 44) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 45)                       <Box  
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 46)                       component="form"
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 47)                       sx={{
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 48)                               '& > :not(style)': { m: 2, width: '25ch' },
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 49)                       }}
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 50)               noValidate
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 51)               autoComplete="off"
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 52)               >
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 53) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 54)               {/* sets the state of the weight and height to the value of the input */}
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 55)       <TextField id="standard-basic" 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 56)               name = "age"
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 57)               label="Age (yrs)" 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 58)               variant="standard"
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 59)               value = {this.state.username}
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 60)       onChange = {e => this.change(e)}
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 61)       size = "small"
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 62)               /> 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 63)               <br />
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 64) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 65)               
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 66)        
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 67)               </Box>   
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 68) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 69)               <h1>Estimated Maximum Heart Rate: </h1> 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 70) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 71)               <h4>One way of checking physical activity intensity is to determine whether your pulse or heart rate is wi>
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 72) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 73)               {/* calculates the max heart rate */}
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 74)       <p>{(220-this.state.age)} bpm</p>
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 75) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 76)       
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 77)       
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 78)       <h1>Target Heart Rate: </h1>
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 79) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 80) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 81)               <h4>For moderate-intensity physical activity, your target heart rate should be between 64% and 76%
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 82)               of your maximum heart rate. You can estimate your maximum heart rate based on your age</h4>
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 83)               <p>{(220-this.state.age)*.64 } bpm -    {(220-this.state.age)*.76 } bpm </p>
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 84) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 85) 
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 86)               <h4>For vigorous-intensity physical activity, your target heart rate should be between 77% and 93% of your>
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 87)               <p>{(220-this.state.age)*.77 } bpm -    {(220-this.state.age)*.93 } bpm </p>
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 88)               
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 89)               <br/>
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 90)               </form>
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 91)               )
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 92) }
+20d28a76 (Shervin A Shirani 2022-10-26 17:12:06 -0400 93) }
+
+
+background.js
+
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400  1) import React from 'react';
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400  2) import './App.css';
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400  3) import './background.css';
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400  4) 
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400  5) function Background() {
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400  6)   return (
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400  7)     <div className='hero-container'>
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400  8)         <video src="workout.jpg"  />
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400  9)     </div>
+000d3178 (Shervin A Shirani 2022-10-26 21:15:45 -0400 10)   ) 
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 11) }
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 12) 
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 13) export default Background
+
+
+background.css
+
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 1) video{
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 2)     object-fit: cover;
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 3)     width: 100%;
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 4)     height: 100%;
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 5)     position: fixed;
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 6)     z-index: -1;
+000d3178 (Shervin A Shirani 2022-10-26 21:15:45 -0400 7) } 
+
+
+App.js
+
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 23)     <body>
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 24)       <style>
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 25)         background-image: url(/workout.jpg);
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 26)         background-repeat: no-repeat;
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 27)         background-attachment: fixed;
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 28)         background-size: 100% 100%;
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 29)       </style>0
+
+
+App.css
+
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 26) .services {
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 27)   background-image: url('workout.jpg');
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 28)   background-position: center;
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 29)   background-size: cover;
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 30)   background-repeat: no-repeat;
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 31)   color: #fff;
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 32)   font-size: 100px;
+27bfdb60 (Shervin A Shirani 2022-10-26 21:14:54 -0400 33) }
